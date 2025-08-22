@@ -21,9 +21,9 @@ export default function SurgeriesOffered() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800">
-          <span className="text-teal-600 text-4xl">Surgeries</span> Offered (General + Laparoscopic)
+          <span className="text-[#0089FF] text-4xl">Surgeries</span> Offered (General + Laparoscopic)
         </h2>
-        <div className="w-20 h-1 bg-teal-500 mx-auto mb-10 rounded-full"></div>
+        <div className="w-20 h-1 bg-[#0089FF] mx-auto mb-10 rounded-full"></div>
 
         {/* Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
@@ -32,8 +32,8 @@ export default function SurgeriesOffered() {
             return (
               <a
                 key={idx}
-                href={surgery.slug} // ✅ updated to use the dynamic slug
-                className="cursor-pointer p-6 bg-white shadow-lg rounded-xl text-center font-medium text-black hover:bg-teal-600 hover:text-white transition"
+                href={surgery.slug}
+                className="cursor-pointer p-6 bg-white border border-gray-200 rounded-xl text-center font-medium text-gray-800 shadow-md transition-transform duration-300 hover:scale-101 hover:shadow-lg hover:border-[#0089FF] hover:text-white hover:bg-[#0089FF] hover:shadow-[#0089FF]/30"
               >
                 <Icon className="text-4xl mx-auto" />
                 <p className="mt-3">{surgery.name}</p>

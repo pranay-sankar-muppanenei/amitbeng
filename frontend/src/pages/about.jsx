@@ -14,7 +14,7 @@ const Counter = ({ target, duration }) => {
         if (entry.isIntersecting && !started) {
           setStarted(true);
           let start = 0;
-          const increment = Math.ceil(target / (duration / 50)); // update every 50ms
+          const increment = Math.ceil(target / (duration / 50)); 
           const interval = setInterval(() => {
             start += increment;
             if (start >= target) {
@@ -29,10 +29,7 @@ const Counter = ({ target, duration }) => {
       { threshold: 0.3 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
+    if (ref.current) observer.observe(ref.current);
     return () => {
       if (ref.current) observer.unobserve(ref.current);
     };
@@ -44,84 +41,67 @@ const Counter = ({ target, duration }) => {
 export default function About() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto mb-3 px-6 space-y-16">
         {/* Heading */}
-        <div className="flex justify-between mb-10">
-            <div>
-          <h4 className="uppercase tracking-widest text-[#3c8AAB] font-semibold text-sm">
-            About Us
-          </h4>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
-            Protect yourself and the ones you love
-          </h2>
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
+          <div>
+            <h4 className="uppercase tracking-widest text-[#0089FF] font-semibold text-sm">
+              About Us
+            </h4>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
+              Protect yourself and the ones you love
+            </h2>
           </div>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl">
             Aenean ut mi neque. Vestibulum condimentum ligula id sagittis ultrices.
             Nulla condimentum urna in quam efficitur viverra. Vestibulum ante ipsum
             primis in faucibus orci luctus et ultrices posuere cubilia curae.
           </p>
         </div>
 
-        {/* Images */}
+        {/* Images with hover aura effect */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
-          <div className="rounded-xl overflow-hidden shadow-md">
-            <Image
-              src="/about1.jpg"
-              alt="Doctor consultation"
-              width={400}
-              height={250}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-xl overflow-hidden shadow-md">
-            <Image
-              src="/about2.jpg"
-              alt="Medical staff"
-              width={400}
-              height={250}
-              className="w-full h-60 object-cover"
-            />
-          </div>
-          <div className="rounded-xl overflow-hidden shadow-md">
-            <Image
-              src="/about3.jpg"
-              alt="Child care"
-              width={400}
-              height={250}
-              className="w-full h-60 object-cover"
-            />
-          </div>
+          {["about1.jpg", "about2.jpg", "about3.jpg"].map((img, i) => (
+            <div
+              key={i}
+              className="rounded-2xl overflow-hidden shadow-md transform transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_#0089FF]"
+            >
+              <Image
+                src={`/${img}`}
+                alt={`About Image ${i + 1}`}
+                width={400}
+                height={250}
+                className="w-full h-60 object-cover"
+              />
+            </div>
+          ))}
         </div>
 
-        {/* Stats */}
+        {/* Stats with blue theme */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <h3 className="text-4xl font-bold text-gray-800">
-              <Counter target={300} duration={2000} />+
-            </h3>
-            <p className="text-gray-600 mt-2">Unique Patients</p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold text-gray-800">
-              <Counter target={87} duration={2000} />
-            </h3>
-            <p className="text-gray-600 mt-2">Medical Staff</p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold text-gray-800">
-              <Counter target={56} duration={2000} />
-            </h3>
-            <p className="text-gray-600 mt-2">Treatment Room</p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold text-gray-800">
-              <Counter target={12} duration={2000} />
-            </h3>
-            <p className="text-gray-600 mt-2">Emergency Unit</p>
-          </div>
-        </div>
+  {[
+    { target: 300, label: "Unique Patients", suffix: "+" },
+    { target: 87, label: "Medical Staff" },
+    { target: 56, label: "Treatment Room" },
+    { target: 12, label: "Emergency Unit" },
+  ].map((item, i) => (
+    <div
+      key={i}
+      className="p-6 bg-white rounded-2xl shadow-md border-l-4 border-r-4 border-gray-200 hover:scale-103 hover:border-[#0089FF] transition duration-300"
+    >
+      <h3 className="text-4xl font-bold text-gray-800">
+        <Counter target={item.target} duration={2000} />
+        {item.suffix || ""}
+      </h3>
+      <p className="text-gray-600 mt-2">{item.label}</p>
+    </div>
+  ))}
+</div>
+
       </div>
-      <DoctorProfile/>
+
+      {/* Doctor Profile Section */}
+      <DoctorProfile />
     </section>
   );
 }

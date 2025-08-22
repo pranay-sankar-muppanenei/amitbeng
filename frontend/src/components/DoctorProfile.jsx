@@ -1,4 +1,4 @@
-"use client";
+
 import Image from "next/image";
 import {
   FaAward,
@@ -16,12 +16,12 @@ export default function DoctorProfile() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <h4 className="uppercase tracking-widest text-[#3c8AAB] font-semibold text-sm mb-2">
+            <h4 className="uppercase tracking-widest text-[#0089FF] font-semibold text-sm mb-2">
               Our Doctor
             </h4>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-snug">
               Patients deserve the{" "}
-              <span className="text-[#3c8AAB]">best care</span> from us
+              <span className="text-[#0089FF]">best care</span> from us
             </h2>
             <p className="text-gray-600 mb-6">
               Dr. Amit Bengani Jain is a{" "}
@@ -34,9 +34,9 @@ export default function DoctorProfile() {
             </p>
           </div>
 
-          {/* Right Image */}
+          {/* Right Image with aura effect */}
           <div className="flex justify-center">
-            <div className="rounded-2xl overflow-hidden shadow-lg">
+            <div className="rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_#0089FF]">
               <Image
                 src="/hdoc.png"
                 alt="Dr. Amit Bengani Jain - General Surgeon in Jaipur"
@@ -51,22 +51,21 @@ export default function DoctorProfile() {
         {/* Row 2 - Info Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Biography */}
-          <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
-            <h3 className="flex items-center text-lg font-semibold text-gray-800">
-              <FaUserMd className="text-teal-600 mr-2" /> Biography
+          <div className="p-6 bg-white rounded-2xl shadow-md text-center border border-transparent hover:border-[#0089FF] hover:shadow-[0_0_20px_#0089FF] transform transition duration-300 hover:scale-105">
+            <h3 className="flex justify-center items-center text-lg font-semibold text-gray-800">
+              <FaUserMd className="text-[#0089FF] mr-2" /> Biography
             </h3>
             <p className="text-gray-600 mt-2 text-sm">
               <strong>Education:</strong> MBBS, MS (General Surgery) <br />
-              <strong>Specialization:</strong> General & Laparoscopic Surgery{" "}
-              <br />
+              <strong>Specialization:</strong> General & Laparoscopic Surgery <br />
               <strong>Experience:</strong> Over 20+ years in surgical practice
             </p>
           </div>
 
           {/* Hospital Affiliations */}
-          <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
-            <h3 className="flex items-center text-lg font-semibold text-gray-800">
-              <FaHospital className="text-teal-600 mr-2" /> Hospital Affiliations
+          <div className="p-6 bg-white rounded-2xl shadow-md text-center border border-transparent hover:border-[#0089FF] hover:shadow-[0_0_20px_#0089FF] transform transition duration-300 hover:scale-105">
+            <h3 className="flex justify-center items-center text-lg font-semibold text-gray-800">
+              <FaHospital className="text-[#0089FF] mr-2" /> Hospital Affiliations
             </h3>
             <p className="text-gray-600 mt-2 text-sm">
               Associated with leading hospitals in Jaipur for advanced general
@@ -75,11 +74,11 @@ export default function DoctorProfile() {
           </div>
 
           {/* Memberships */}
-          <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
-            <h3 className="flex items-center text-lg font-semibold text-gray-800">
-              <FaStethoscope className="text-teal-600 mr-2" /> Memberships
+          <div className="p-6 bg-white rounded-2xl shadow-md text-center border border-transparent hover:border-[#0089FF] hover:shadow-[0_0_20px_#0089FF] transform transition duration-300 hover:scale-105">
+            <h3 className="flex justify-center items-center text-lg font-semibold text-gray-800">
+              <FaStethoscope className="text-[#0089FF] mr-2" /> Memberships
             </h3>
-            <ul className="list-disc list-inside text-gray-600 mt-2 text-sm space-y-1">
+            <ul className="list-disc list-inside text-gray-600 mt-2 text-sm space-y-1 text-left">
               <li>Association of Surgeons of India (ASI)</li>
               <li>Indian Medical Association (IMA)</li>
               <li>Other reputed medical societies</li>
@@ -87,9 +86,9 @@ export default function DoctorProfile() {
           </div>
 
           {/* Awards */}
-          <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
-            <h3 className="flex items-center text-lg font-semibold text-gray-800">
-              <FaAward className="text-teal-600 mr-2" /> Awards & Recognitions
+          <div className="p-6 bg-white rounded-2xl shadow-md text-center border border-transparent hover:border-[#0089FF] hover:shadow-[0_0_20px_#0089FF] transform transition duration-300 hover:scale-105">
+            <h3 className="flex justify-center items-center text-lg font-semibold text-gray-800">
+              <FaAward className="text-[#0089FF] mr-2" /> Awards & Recognitions
             </h3>
             <p className="text-gray-600 mt-2 text-sm">
               Recognized for excellence in patient care and laparoscopic
@@ -99,9 +98,9 @@ export default function DoctorProfile() {
           </div>
 
           {/* Philosophy of Care */}
-          <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition sm:col-span-2 lg:col-span-3">
-            <h3 className="flex items-center text-lg font-semibold text-gray-800">
-              <MdWorkspacePremium className="text-teal-600 mr-2" /> Philosophy of Care
+          <div className="p-6 bg-white rounded-2xl shadow-md text-center border border-transparent hover:border-[#0089FF] hover:shadow-[0_0_20px_#0089FF] transform transition duration-300 hover:scale-105 sm:col-span-2 lg:col-span-3">
+            <h3 className="flex justify-center items-center text-lg font-semibold text-gray-800">
+              <MdWorkspacePremium className="text-[#0089FF] mr-2" /> Philosophy of Care
             </h3>
             <p className="text-gray-600 mt-2 italic text-sm">
               "My focus has always been to provide compassionate, safe, and

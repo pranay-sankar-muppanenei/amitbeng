@@ -48,27 +48,32 @@ export default function Contact() {
     <div className="bg-gray-50">
       {/* Top Info Section */}
       <section className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6 text-center">
-        <div className="p-6 bg-white shadow-md rounded-xl">
-          <img src='/address.png' className='mx-auto'/>
-          <h3 className="font-semibold text-lg">Our Address</h3>
-          <p className="text-gray-600 mt-1">
-            1534 Ford Street, Santa Clara, CA, California
-          </p>
-        </div>
-        <div className="p-6 bg-white shadow-md rounded-xl">
-          <img src='/phone.png' className='mx-auto'/>
-          <h3 className="font-semibold text-lg">Phone Number</h3>
-          <p className="text-gray-600 mt-1">408-438-4220</p>
-        </div>
-        <div className="p-6 bg-white shadow-md rounded-xl">
-          <img src='/files.png' className='mx-auto'/>
-          <h3 className="font-semibold text-lg">Email Address</h3>
-          <p className="text-gray-600 mt-1">demo@domain.com</p>
-        </div>
-      </section>
+      {/* Address */}
+      <div className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)]">
+        <FaMapMarkerAlt className="mx-auto text-4xl text-[#0076BC] mb-3" />
+        <h3 className="font-semibold text-lg">Our Address</h3>
+        <p className="text-gray-600 mt-1">
+          1534 Ford Street, Santa Clara, CA, California
+        </p>
+      </div>
+
+      {/* Phone */}
+      <div className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)]">
+        <FaPhoneAlt className="mx-auto text-4xl text-[#0076BC] mb-3" />
+        <h3 className="font-semibold text-lg">Phone Number</h3>
+        <p className="text-gray-600 mt-1">408-438-4220</p>
+      </div>
+
+      {/* Email */}
+      <div className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)]">
+        <FaEnvelope className="mx-auto text-4xl text-[#0076BC] mb-3" />
+        <h3 className="font-semibold text-lg">Email Address</h3>
+        <p className="text-gray-600 mt-1">demo@domain.com</p>
+      </div>
+    </section>
 
       {/* Contact Form + Text */}
-      <section className="max-w-full bg-green-100 mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-start">
+      <section className="max-w-full  mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-start">
         {/* Form */}
         <form
           onSubmit={handleSubmit}
@@ -82,7 +87,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               placeholder="Name"
-              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
             />
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -97,7 +102,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
             />
             {errors.email && (
               <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -112,7 +117,7 @@ export default function Contact() {
               value={formData.company}
               onChange={handleChange}
               placeholder="Company"
-              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
             />
           </div>
 
@@ -129,7 +134,7 @@ export default function Contact() {
                   value="yes"
                   checked={formData.membership === "yes"}
                   onChange={handleChange}
-                  className="text-teal-600"
+                  className="text-[#0089FF]"
                 />
                 Yes
               </label>
@@ -140,7 +145,7 @@ export default function Contact() {
                   value="no"
                   checked={formData.membership === "no"}
                   onChange={handleChange}
-                  className="text-teal-600"
+                  className="text-[#0089FF]"
                 />
                 No
               </label>
@@ -158,7 +163,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               placeholder="Your message"
-              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
             />
             {errors.message && (
               <p className="text-red-500 text-sm mt-1">{errors.message}</p>
@@ -168,7 +173,7 @@ export default function Contact() {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-teal-600 text-white py-3 rounded-lg hover:bg-teal-700 transition"
+            className="w-full bg-[#0089FF] text-white py-3 rounded-lg hover:bg-[#0073d6] transition"
           >
             Send Message
           </button>
@@ -184,32 +189,36 @@ export default function Contact() {
           </p>
 
           {/* Staff Testimonials */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="p-6 bg-white rounded-xl shadow-md text-center">
-              <img
-                src="/test2.jpg"
-                alt="Jonna Wang"
-                className="w-26 h-26 rounded-full mx-auto mb-3"
-              />
-              <h4 className="font-semibold">Jonna Wang</h4>
-              <p className="text-sm text-teal-600">CS Staff</p>
-              <p className="text-gray-600 text-sm mt-2 italic">
-                “Lorem ipsum dolor sit amet, adipiscing elit.”
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-xl shadow-md text-center">
-              <img
-                src="/test1.jpg"
-                alt="John Devon"
-                className="w-26 h-26 rounded-full mx-auto mb-3"
-              />
-              <h4 className="font-semibold">John Devon</h4>
-              <p className="text-sm text-teal-600">CS Staff</p>
-              <p className="text-gray-600 text-sm mt-2 italic">
-                “Lorem ipsum dolor sit amet, adipiscing elit.”
-              </p>
-            </div>
-          </div>
+         <div className="grid sm:grid-cols-2 gap-6">
+  {/* Card 1 */}
+  <div className="p-6 bg-white rounded-xl shadow-md text-center border border-transparent transition-transform duration-300 transform hover:scale-105 hover:border-[#0089FF] hover:shadow-[0_0_20px_rgba(0,137,255,0.5)]">
+    <img
+      src="/test2.jpg"
+      alt="Jonna Wang"
+      className="w-26 h-26 rounded-full mx-auto mb-3"
+    />
+    <h4 className="font-semibold">Jonna Wang</h4>
+    <p className="text-sm text-[#0089FF]">CS Staff</p>
+    <p className="text-gray-600 text-sm mt-2 italic">
+      “Lorem ipsum dolor sit amet, adipiscing elit.”
+    </p>
+  </div>
+
+  {/* Card 2 */}
+  <div className="p-6 bg-white rounded-xl shadow-md text-center border border-transparent transition-transform duration-300 transform hover:scale-105 hover:border-[#0089FF] hover:shadow-[0_0_20px_rgba(0,137,255,0.5)]">
+    <img
+      src="/test1.jpg"
+      alt="John Devon"
+      className="w-26 h-26 rounded-full mx-auto mb-3"
+    />
+    <h4 className="font-semibold">John Devon</h4>
+    <p className="text-sm text-[#0089FF]">CS Staff</p>
+    <p className="text-gray-600 text-sm mt-2 italic">
+      “Lorem ipsum dolor sit amet, adipiscing elit.”
+    </p>
+  </div>
+</div>
+
         </div>
       </section>
     </div>

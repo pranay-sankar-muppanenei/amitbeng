@@ -27,21 +27,24 @@ const Testimonials = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center mb-2">
-          What Our <span className="text-teal-600 text-4xl">Patients</span> Say
+          What Our{" "}
+          <span className="text-[#2563eb] text-4xl">Patients</span> Say
         </h2>
-        <div className="w-24 h-1 bg-teal-500 mx-auto mb-10"></div>
+        <div className="w-24 h-1 bg-[#2563eb] mx-auto mb-10"></div>
 
         {/* Cards */}
         <div className="grid gap-8 md:grid-cols-3">
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
-              className="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-lg transition-shadow hover:scale-103"
+              className="bg-white p-6 rounded-2xl shadow-md text-center border border-transparent
+                         transition-all duration-300 transform hover:scale-105 
+                         hover:border-[#2563eb] hover:shadow-[0_0_25px_rgba(37,99,235,0.5)]"
             >
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-30 h-30 rounded-full mx-auto mb-4  object-cover"
+                className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-4 border-[#2563eb]/20"
               />
               <p className="text-gray-600 italic mb-4">
                 "{testimonial.feedback}"

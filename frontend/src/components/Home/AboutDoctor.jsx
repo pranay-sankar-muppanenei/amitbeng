@@ -23,61 +23,62 @@ const AboutDoctor = () => {
           </h2>
 
           {/* Cards Section */}
-          <div className="space-y-6">
-            {/* Credentials */}
-            <div className="border hover:scale-103 border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition">
-              <h3 className="flex items-center text-xl font-semibold text-black mb-4">
-                <FaGraduationCap className="mr-2 text-black" /> Credentials
-              </h3>
-              <ul className="space-y-2 ml-3 text-gray-700">
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> MBBS, MS – General Surgery
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> Fellowship in Laparoscopic Surgery
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> Specialized Training in Proctology
-                </li>
-              </ul>
-            </div>
+         <div className="space-y-6">
+  {/* Credentials */}
+  <div className="border border-gray-200 rounded-xl p-6 shadow-md transition-transform duration-300 transform hover:scale-105 hover:border-[#0089FF] hover:shadow-[0_0_20px_rgba(0,137,255,0.5)]">
+    <h3 className="flex items-center text-xl font-semibold text-black mb-4">
+      <FaGraduationCap className="mr-2 text-[#0089FF]" /> Credentials
+    </h3>
+    <ul className="space-y-2 ml-3 text-gray-700">
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> MBBS, MS – General Surgery
+      </li>
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Fellowship in Laparoscopic Surgery
+      </li>
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Specialized Training in Proctology
+      </li>
+    </ul>
+  </div>
 
-            {/* Experience */}
-            <div className="border hover:scale-103 border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition">
-              <h3 className="flex items-center text-xl font-semibold text-black mb-4">
-                <FaUserMd className="mr-2 text-black" /> Experience
-              </h3>
-              <ul className="space-y-2 ml-3 text-gray-700">
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> 10+ years in advanced surgical care
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> Performed 5000+ successful procedures
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> Renowned in piles, fissures & fistula treatment
-                </li>
-              </ul>
-            </div>
+  {/* Experience */}
+  <div className="border border-gray-200 rounded-xl p-6 shadow-md transition-transform duration-300 transform hover:scale-105 hover:border-[#0089FF] hover:shadow-[0_0_20px_rgba(0,137,255,0.5)]">
+    <h3 className="flex items-center text-xl font-semibold text-black mb-4">
+      <FaUserMd className="mr-2 text-[#0089FF]" /> Experience
+    </h3>
+    <ul className="space-y-2 ml-3 text-gray-700">
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> 10+ years in advanced surgical care
+      </li>
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Performed 5000+ successful procedures
+      </li>
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Renowned in piles, fissures & fistula treatment
+      </li>
+    </ul>
+  </div>
 
-            {/* Achievements */}
-            <div className="border hover:scale-103 border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition">
-              <h3 className="flex items-center text-xl font-semibold text-black mb-4">
-                <FaTrophy className="mr-2 text-black" /> Achievements
-              </h3>
-              <ul className="space-y-2 ml-3 text-gray-700">
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> Recognized as a leading Proctologist in India
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> Regular speaker at national medical conferences
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-green-500 mr-2 mt-1" /> Published research in reputed journals
-                </li>
-              </ul>
-            </div>
-          </div>
+  {/* Achievements */}
+  <div className="border border-gray-200 rounded-xl p-6 shadow-md transition-transform duration-300 transform hover:scale-105 hover:border-[#0089FF] hover:shadow-[0_0_20px_rgba(0,137,255,0.5)]">
+    <h3 className="flex items-center text-xl font-semibold text-black mb-4">
+      <FaTrophy className="mr-2 text-[#0089FF]" /> Achievements
+    </h3>
+    <ul className="space-y-2 ml-3 text-gray-700">
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Recognized as a leading Proctologist in India
+      </li>
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Regular speaker at national medical conferences
+      </li>
+      <li className="flex items-start">
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Published research in reputed journals
+      </li>
+    </ul>
+  </div>
+</div>
+
         </div>
       </div>
     </section>
