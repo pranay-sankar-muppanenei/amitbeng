@@ -25,6 +25,7 @@ export default function Header() {
             onMouseEnter={() => setOpenDropdown("service")}
             onMouseLeave={() => setOpenDropdown(null)}
           >
+            <Link href='/service'>
             <button className="flex items-center hover:text-blue-600">
               Service
               <FiChevronDown
@@ -32,10 +33,12 @@ export default function Header() {
                   openDropdown === "service" ? "rotate-180" : "rotate-0"
                 }`}
               />
+            
             </button>
+              </Link>
             {openDropdown === "service" && (
               <div className="absolute left-0 top-3 mt-2 w-40 bg-white shadow-lg rounded-md py-2 z-20">
-                <Link href="/service1" className="block px-4 py-2 hover:bg-gray-100">Service 1</Link>
+                <Link href="/pricing" className="block px-4 py-2 hover:bg-gray-100">Pricing</Link>
                 <Link href="/service2" className="block px-4 py-2 hover:bg-gray-100">Service 2</Link>
               </div>
             )}
