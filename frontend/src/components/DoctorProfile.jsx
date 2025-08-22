@@ -38,11 +38,11 @@ export default function DoctorProfile() {
           <div className="flex justify-center">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/images/doctor.jpg"
+                src="/hdoc.png"
                 alt="Dr. Amit Bengani Jain - General Surgeon in Jaipur"
                 width={400}
                 height={500}
-                className="w-full h-auto object-cover"
+                className="w-full h-[500px] object-cover"
               />
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function DoctorProfile() {
               <strong>Education:</strong> MBBS, MS (General Surgery) <br />
               <strong>Specialization:</strong> General & Laparoscopic Surgery{" "}
               <br />
-              <strong>Experience:</strong> Over 12+ years in surgical practice
+              <strong>Experience:</strong> Over 20+ years in surgical practice
             </p>
           </div>
 

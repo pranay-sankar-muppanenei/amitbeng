@@ -13,6 +13,7 @@ const diseases = [
   { name: "Hydrocele", slug: "/treatments/hydrocele", icon: <FaUserMd /> },
 ];
 
+
 const DiseasesGrid = () => {
   return (
     <section className="py-16 bg-gray-50">

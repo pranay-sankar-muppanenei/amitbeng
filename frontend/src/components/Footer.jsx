@@ -43,7 +43,7 @@ export default function Footer({ showSubscribe = true }) {
         <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10 text-gray-700">
           {/* Logo + About */}
           <div>
-            <img src="/logo-demed.png" alt="logo" className="h-[30px] mb-4" />
+            <img src="/logo.png" alt="logo" className="h-[80px] mb-4" />
             <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
               luctus nec ullamcorper mattis .

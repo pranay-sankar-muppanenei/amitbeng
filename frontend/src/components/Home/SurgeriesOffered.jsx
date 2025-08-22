@@ -4,13 +4,16 @@ import { MdHealthAndSafety } from "react-icons/md";
 
 export default function SurgeriesOffered() {
   const surgeries = [
-    { name: "Appendectomy", icon: GiScalpel, size: "text-4xl" },
-    { name: "Gallbladder Removal", icon: GiKidneys, size: "text-4xl" },
-    { name: "Hernia Repair", icon: FaStethoscope, size: "text-4xl" },
-    { name: "Bariatric Surgery", icon: FaHeartbeat, size: "text-4xl" },
-    { name: "Laparoscopic Surgery", icon: GiMedicalDrip, size: "text-4xl" },
-    { name: "Colorectal Surgery", icon: MdHealthAndSafety, size: "text-4xl" },
-    { name: "Thyroid Surgery", icon: FaUserMd, size: "text-4xl" },
+    { name: "Gallbladder Removal", slug: "/surgeries/laparoscopic-cholecystectomy", icon: GiKidneys },
+    { name: "Appendectomy", slug: "/surgeries/laparoscopic-appendectomy", icon: GiScalpel },
+    { name: "Hernia Repair", slug: "/surgeries/laparoscopic-hernia-repair", icon: FaStethoscope },
+    { name: "Laser Piles Surgery", slug: "/surgeries/laser-piles-surgery", icon: FaHeartbeat },
+    { name: "Fissure Surgery", slug: "/surgeries/fissure-surgery", icon: FaStethoscope },
+    { name: "Fistula Surgery", slug: "/surgeries/fistula-surgery", icon: FaHeartbeat },
+    { name: "Pilonidal Sinus Surgery", slug: "/surgeries/pilonidal-sinus-surgery", icon: GiMedicalDrip },
+    { name: "Bariatric Surgery", slug: "/surgeries/bariatric-surgery", icon: MdHealthAndSafety },
+    { name: "Breast Surgery", slug: "/surgeries/breast-surgery", icon: FaUserMd },
+    { name: "Thyroid Surgery", slug: "/surgeries/thyroidectomy", icon: FaUserMd },
   ];
 
   return (
@@ -29,10 +32,10 @@ export default function SurgeriesOffered() {
             return (
               <a
                 key={idx}
-                href="#"
+                href={surgery.slug} // ✅ updated to use the dynamic slug
                 className="cursor-pointer p-6 bg-white shadow-lg rounded-xl text-center font-medium text-black hover:bg-teal-600 hover:text-white transition"
               >
-                <Icon className={`${surgery.size} mx-auto`} />
+                <Icon className="text-4xl mx-auto" />
                 <p className="mt-3">{surgery.name}</p>
               </a>
             );

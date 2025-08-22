@@ -44,11 +44,12 @@ export default function Blogs() {
                   {blog.description}
                 </p>
                 <Link
-                  href={`/blogDetails/${blog.id}`}
-                  className="text-teal-600 flex items-center text-sm font-medium hover:underline"
-                >
-                  read more <FaArrowRight className="ml-2" />
-                </Link>
+  href={`/blog/${blog.slug}`}
+  className="text-teal-600 flex items-center text-sm font-medium hover:underline"
+>
+  read more <FaArrowRight className="ml-2" />
+</Link>
+
               </div>
             </div>
           ))}

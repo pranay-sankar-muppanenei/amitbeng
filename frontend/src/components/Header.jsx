@@ -10,7 +10,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-blue-900 flex items-center gap-1">
-          <img src="/logo-demed.png" className="h-[30px] w-[150px]" alt="Logo" />
+          <img src="/logo.png" className="h-[80px]" alt="Logo" />
         </Link>
 
         {/* Nav links */}
@@ -57,8 +57,9 @@ export default function Header() {
             </button>
             {openDropdown === "pages" && (
               <div className="absolute left-0 top-3 mt-2 w-40 bg-white shadow-lg rounded-md py-2 z-20">
-                <Link href="/page1" className="block px-4 py-2 hover:bg-gray-100">Page 1</Link>
-                <Link href="/page2" className="block px-4 py-2 hover:bg-gray-100">Page 2</Link>
+                <Link href="/blogs" className="block px-4 py-2 hover:bg-gray-100">Blogs</Link>
+                <Link href="/book-appointment" className="block px-4 py-2 hover:bg-gray-100">Book Appointment</Link>
+                <Link href="/404" className="block px-4 py-2 hover:bg-gray-100">404</Link>
               </div>
             )}
           </div>
