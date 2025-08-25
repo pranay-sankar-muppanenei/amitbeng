@@ -12,29 +12,46 @@ export default function DiseaseDetail() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-16">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
       {/* Title */}
-      <h1 className="text-4xl font-bold text-gray-800 mb-6">{disease.title}</h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center md:text-left">
+        {disease.title}
+      </h1>
 
-      {/* Description */}
-      <div className="flex justify-between items-center">
-        <p className="text-lg text-gray-600 mb-6">{disease.description}</p>
-        <img src="/dummyblog.jpg" className="w-[400px] h-[200px]" />
+      {/* Description + Image */}
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mb-10">
+        {/* Description */}
+        <p className="flex-1 text-base sm:text-lg text-gray-600 leading-relaxed">
+          {disease.description}
+        </p>
+
+        {/* Image */}
+        <img
+          src="/dummyblog.jpg"
+          alt={disease.title}
+          className="w-full md:w-[400px] h-auto rounded-lg shadow"
+        />
       </div>
 
       {/* Symptoms */}
-      <h2 className="text-2xl font-semibold mb-4">Symptoms</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
+      <h2 className="text-xl sm:text-2xl font-semibold mb-4">Symptoms</h2>
+      <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8 pl-2 sm:pl-4">
         {disease.symptoms.map((symptom, i) => (
-          <li key={i}>{symptom}</li>
+          <li key={i} className="text-sm sm:text-base">
+            {symptom}
+          </li>
         ))}
       </ul>
 
       {/* Treatments */}
-      <h2 className="text-2xl font-semibold mb-4">Treatments Available</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
+      <h2 className="text-xl sm:text-2xl font-semibold mb-4">
+        Treatments Available
+      </h2>
+      <ul className="list-disc list-inside space-y-2 text-gray-700 pl-2 sm:pl-4">
         {disease.treatments.map((treat, i) => (
-          <li key={i}>{treat}</li>
+          <li key={i} className="text-sm sm:text-base">
+            {treat}
+          </li>
         ))}
       </ul>
     </div>
