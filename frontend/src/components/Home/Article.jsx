@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const SurgeryActivities = () => {
-  // Add your image filenames from public folder
   const images = [
     "/news4.jpg",
     "/news5.jpg",
@@ -24,23 +31,34 @@ const SurgeryActivities = () => {
           Our Surgeries and OT <br /> Latest Activities
         </h2>
 
-        {/* Image Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+        {/* Carousel */}
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={20}
+          slidesPerView={1}
+          autoplay={{ delay: 3000 }}
+          pagination={{ clickable: true }}
+          navigation
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="rounded-xl"
+        >
           {images.map((src, i) => (
-            <div
-              key={i}
-              className="relative w-auto h-64  rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
-            >
-              <Image
-                src={src}
-                alt={`Activity ${i + 1}`}
-                layout="fill"
-                objectFit="contain"
-                className="rounded-xl"
-              />
-            </div>
+            <SwiperSlide key={i}>
+              <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <Image
+                  src={src}
+                  alt={`Activity ${i + 1}`}
+                  fill
+                  className="object-contain rounded-xl"
+                />
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
