@@ -31,9 +31,8 @@ export default function Header() {
           <Link href="/about" className="hover:text-[#0089FF] transition">
             About
           </Link>
-          <Link href="/contact" className="hover:text-[#0089FF] transition">
-            Contact
-          </Link>
+        
+     
 
           {/* Services Dropdown */}
      
@@ -139,17 +138,13 @@ export default function Header() {
 
         {/* Auth Buttons - Desktop */}
         <div className="hidden md:flex space-x-4 items-center">
+         
+      
           <Link
-            href="/login"
-            className="text-gray-700 hover:text-[#0089FF] hover:underline transition"
-          >
-            Login
-          </Link>
-          <Link
-            href="/signup"
+            href="/contact"
             className="bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white px-5 py-2.5 rounded-lg shadow-md hover:scale-105 transition-transform"
           >
-            Sign Up
+            Contact Us
           </Link>
         </div>
 
@@ -177,12 +172,7 @@ export default function Header() {
     >
       About
     </Link>
-    <Link
-      href="/contact"
-      className="block hover:bg-blue-50 rounded-md px-2 transition"
-    >
-      Contact
-    </Link>
+   
 
     {/* Services Toggle (Mobile) */}
     <div>
@@ -240,17 +230,12 @@ export default function Header() {
 
     {/* Login / Signup Buttons */}
     <div className="pt-2 flex gap-4">
+      
       <Link
-        href="/login"
-        className="flex-1 text-center border border-gray-200 px-3 py-2 rounded-lg hover:bg-blue-50 transition"
-      >
-        Login
-      </Link>
-      <Link
-        href="/signup"
+        href="/contact"
         className="flex-1 text-center bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white px-3 py-2 rounded-lg hover:opacity-90 transition"
       >
-        Sign Up
+        Contact
       </Link>
     </div>
   </div>

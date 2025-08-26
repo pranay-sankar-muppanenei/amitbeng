@@ -53,7 +53,7 @@ export default function About() {
             </h2>
           </div>
           <p className="text-gray-600 max-w-full">
-           Best General & Laparoscopic Surgeon in Jaipur, Dr. Amit Bengani Jain
+         Dr. Amit Bengani Jain
 With over 22 years of experience and 20,000+ successful surgeries, Dr. Amit Bengani Jain is recognized as the trusted expert in General and Laparoscopic Surgery in Jaipur. At VS MediHub, Nirman Nagar, he provides advanced, minimally invasive treatments for conditions like hernia, piles, and gallbladder stones with utmost care and precision.
 
 Dr. Amit Bengani Jain and his dedicated medical team are committed to providing compassionate, patient-centered care, ensuring every patient and their loved ones feel protected and informed throughout their surgical journey.
