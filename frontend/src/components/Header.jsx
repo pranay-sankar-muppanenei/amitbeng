@@ -113,24 +113,14 @@ export default function Header() {
                 >
                   Blogs
                 </Link>
-                <Link
-                  href="/book-appointment"
-                  className="block px-4 py-2 hover:bg-[#F0F8FF]"
-                >
-                  Book Appointment
-                </Link>
+            
                 <Link
                   href="/gallery"
                   className="block px-4 py-2 hover:bg-[#F0F8FF]"
                 >
                   Gallery & Media
                 </Link>
-                <Link
-                  href="/404"
-                  className="block px-4 py-2 hover:bg-[#F0F8FF]"
-                >
-                  404
-                </Link>
+             
               </div>
             )}
           </div>
@@ -214,18 +204,8 @@ export default function Header() {
       >
         Blogs
       </Link>
-      <Link
-        href="/book-appointment"
-        className="block ml-4 hover:bg-blue-50 rounded-md px-2 transition"
-      >
-        Book Appointment
-      </Link>
-      <Link
-        href="/404"
-        className="block ml-4 hover:bg-blue-50 rounded-md px-2 transition"
-      >
-        404
-      </Link>
+     
+     
     </div>
 
     {/* Login / Signup Buttons */}

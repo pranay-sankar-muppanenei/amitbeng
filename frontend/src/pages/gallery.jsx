@@ -3,9 +3,9 @@ import { useState } from "react";
 
 const galleryData = {
   opd: [
-    "/about1.jpg",
-    "/about2.jpg",
-    "/about3.jpg",
+    "/about10.jpg",
+    "/about20.jpg",
+    "/about30.jpg",
   ],
   events: [
     "/gallery/event1.jpg",
