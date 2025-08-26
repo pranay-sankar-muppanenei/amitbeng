@@ -38,7 +38,7 @@ export default function DoctorProfile() {
           <div className="flex justify-center">
             <div className="rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_#0089FF]">
               <Image
-                src="/hdoc.png"
+                src="/jain2.png"
                 alt="Dr. Amit Bengani Jain - General Surgeon in Jaipur"
                 width={400}
                 height={500}

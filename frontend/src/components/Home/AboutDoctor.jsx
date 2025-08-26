@@ -9,7 +9,7 @@ const AboutDoctor = () => {
         {/* Doctor Image */}
         <div className="flex justify-center">
           <img
-            src="/hdoc.png" // place doctor image in /public folder
+            src="/jain2.png" // place doctor image in /public folder
             alt="Dr. Amit Bengani Jain"
             className="rounded-2xl shadow-lg max-w-sm w-full object-cover"
           />
