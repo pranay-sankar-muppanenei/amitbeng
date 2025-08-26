@@ -13,11 +13,10 @@ const SurgeryActivities = () => {
     "/news4.jpg",
     "/news5.jpg",
     "/news3.jpg",
-    "/new1.jpg",
-    "/news2.jpg",
-    "/news6.jpg",
     "/news7.jpg",
-    "/news8.jpg",
+    "/news6.jpg",
+   
+     "/news2.jpg",
   ];
 
   return (
