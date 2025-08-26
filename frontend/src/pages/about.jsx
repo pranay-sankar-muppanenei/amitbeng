@@ -43,7 +43,7 @@ export default function About() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto mb-3 px-6 space-y-16">
         {/* Heading */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
+        <div className="flex flex-col md:flex-col justify-between items-start md:items-start gap-6 mb-10">
           <div>
             <h4 className="uppercase tracking-widest text-[#0089FF] font-semibold text-sm">
               About Us
@@ -52,10 +52,11 @@ export default function About() {
               Protect yourself and the ones you love
             </h2>
           </div>
-          <p className="text-gray-600 max-w-2xl">
-            Aenean ut mi neque. Vestibulum condimentum ligula id sagittis ultrices.
-            Nulla condimentum urna in quam efficitur viverra. Vestibulum ante ipsum
-            primis in faucibus orci luctus et ultrices posuere cubilia curae.
+          <p className="text-gray-600 max-w-full">
+           Best General & Laparoscopic Surgeon in Jaipur — Dr. Amit Bengani Jain
+With over 22 years of experience and 20,000+ successful surgeries, Dr. Amit Bengani Jain is recognized as the trusted expert in General and Laparoscopic Surgery in Jaipur. At VS MediHub, Nirman Nagar, he provides advanced, minimally invasive treatments for conditions like hernia, piles, and gallbladder stones with utmost care and precision.
+
+Dr. Amit Bengani Jain and his dedicated medical team are committed to providing compassionate, patient-centered care, ensuring every patient and their loved ones feel protected and informed throughout their surgical journey.
           </p>
         </div>
 
@@ -78,16 +79,15 @@ export default function About() {
         </div>
 
         {/* Stats with blue theme */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div className="flex flex-wrap justify-center gap-8 text-center">
   {[
-    { target: 300, label: "Unique Patients", suffix: "+" },
-    { target: 87, label: "Medical Staff" },
-    { target: 56, label: "Treatment Room" },
-    { target: 12, label: "Emergency Unit" },
+    { target: 22000, label: "Successfull Surgeries", suffix: "+" },
+    { target: 22, label: "Surgical Experience", suffix: "+" },
+    { target: 1000, label: "Patients Treated", suffix: "+" },
   ].map((item, i) => (
     <div
       key={i}
-      className="p-6 bg-white rounded-2xl shadow-md border-l-4 border-r-4 border-gray-200 hover:scale-103 hover:border-[#0089FF] transition duration-300"
+      className="p-6 bg-white rounded-2xl shadow-md border-l-4 border-r-4 border-gray-200 hover:scale-103 hover:border-[#0089FF] transition duration-300 w-64"
     >
       <h3 className="text-4xl font-bold text-gray-800">
         <Counter target={item.target} duration={2000} />
@@ -97,6 +97,7 @@ export default function About() {
     </div>
   ))}
 </div>
+
 
       </div>
 

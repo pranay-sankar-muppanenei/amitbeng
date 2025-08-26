@@ -58,7 +58,7 @@ export default function DoctorProfile() {
             <p className="text-gray-600 mt-2 text-sm">
               <strong>Education:</strong> MBBS, MS (General Surgery) <br />
               <strong>Specialization:</strong> General & Laparoscopic Surgery <br />
-              <strong>Experience:</strong> Over 20+ years in surgical practice
+              <strong>Experience:</strong> Over 22+ years in surgical practice
             </p>
           </div>
 

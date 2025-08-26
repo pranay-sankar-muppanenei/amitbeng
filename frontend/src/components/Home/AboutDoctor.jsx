@@ -49,10 +49,10 @@ const AboutDoctor = () => {
     </h3>
     <ul className="space-y-2 ml-3 text-gray-700">
       <li className="flex items-start">
-        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> 10+ years in advanced surgical care
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> 22+ years in advanced surgical care
       </li>
       <li className="flex items-start">
-        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Performed 5000+ successful procedures
+        <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Performed 20,000+ successful procedures
       </li>
       <li className="flex items-start">
         <FaCheckCircle className="text-[#0089FF] mr-2 mt-1" /> Renowned in piles, fissures & fistula treatment

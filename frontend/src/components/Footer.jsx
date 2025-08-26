@@ -1,112 +1,99 @@
-import { FaFacebookF, FaTwitter, FaYoutube, FaWordpress } from "react-icons/fa";
+// src/components/Footer.jsx
+import Link from "next/link";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaLinkedin,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 
-export default function Footer({ showSubscribe = true }) {
+export default function Footer() {
+  const socialLinks = [
+    { icon: FaFacebookF, link: "https://www.facebook.com/profile.php?id=61579038320766" },
+    { icon: FaTwitter, link: "https://x.com/DrAmitBengani" },
+    { icon: FaYoutube, link: "https://youtube.com/@dramitbenganijain?si=pTcxpxfYB0D4pJ0j" },
+    { icon: FaInstagram, link: "https://www.instagram.com/dr.amit.bengani.jain/" },
+    { icon: FaLinkedin, link: "https://www.linkedin.com/in/dr-amit-bengani-jain/" },
+  ];
+
   return (
-    <footer className="bg-white">
-      {/* Subscribe Section */}
-      {showSubscribe && (
-        <div className="max-w-5xl mx-auto px-6 mt-5">
-          <div className="bg-gradient-to-r from-[#E6F3FF] to-white rounded-2xl shadow-xl p-10 text-center -mt-12 relative z-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-              Stay Updated with <span className="text-[#0089FF]">Our Newsletter</span>
-            </h2>
-            <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
-              Get the latest updates, health tips, and news straight to your inbox.
-            </p>
+    <footer className="bg-white border-t border-gray-200">
+      {/* Main Footer Section */}
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-gray-700">
+        
+        {/* Logo & Info */}
+        <div className="text-center md:text-left">
+          <img
+            src="/logo.png"
+            alt="logo"
+            className="h-[70px] mx-auto md:mx-0 mb-4"
+          />
+          <p className="text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
+            Providing trusted surgical expertise and compassionate care with the latest technology.
+          </p>
 
-            {/* Email input */}
-            <div className="mt-6 flex justify-center">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full max-w-md px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0089FF]"
-              />
-              <button className="bg-[#0089FF] hover:bg-[#0073d6] text-white px-6 py-3 rounded-r-lg font-semibold transition-all">
-                Join
-              </button>
-            </div>
-
-            {/* Social icons */}
-            <div className="mt-6 flex justify-center gap-5">
-              {[
-                { icon: FaFacebookF, link: "#", color: "hover:bg-blue-600" },
-                { icon: FaTwitter, link: "#", color: "hover:bg-sky-500" },
-                { icon: FaYoutube, link: "#", color: "hover:bg-red-600" },
-                { icon: FaWordpress, link: "#", color: "hover:bg-gray-700" },
-              ].map(({ icon: Icon, link, color }, idx) => (
-                <a
-                  key={idx}
-                  href={link}
-                  className={`w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:text-white transition ${color}`}
-                >
-                  <Icon size={18} />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Footer Section */}
-      <div className="mt-20 bg-gradient-to-r from-[#F9FAFB] to-[#E6F3FF]">
-        <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10 text-gray-700">
-          {/* Logo + About */}
-          <div>
-            <img src="/logo.png" alt="logo" className="h-[70px] mb-4" />
-            <p className="text-sm leading-relaxed">
-              Providing trusted surgical expertise and compassionate care with the latest technology.
-            </p>
-          </div>
-
-          {/* Service */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4 text-[#0089FF]">Services</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="hover:text-[#0089FF] cursor-pointer">Check Up</li>
-              <li className="hover:text-[#0089FF] cursor-pointer">Emergency Call</li>
-              <li className="hover:text-[#0089FF] cursor-pointer">Consultation</li>
-            </ul>
-          </div>
-
-          {/* Further Links */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4 text-[#0089FF]">Further Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="hover:text-[#0089FF] cursor-pointer">Terms & Conditions</li>
-              <li className="hover:text-[#0089FF] cursor-pointer">News</li>
-            </ul>
-          </div>
-
-          {/* Location */}
-          <div>
-            <h3 className="font-semibold text-lg mb-4 text-[#0089FF]">Our Location</h3>
-            <p className="text-sm leading-relaxed">
-              1534 Ford Street <br /> CA, California
-            </p>
-            <div className="mt-4 flex gap-3">
-              {[
-                { icon: FaFacebookF, link: "#", color: "hover:bg-blue-600" },
-                { icon: FaTwitter, link: "#", color: "hover:bg-sky-500" },
-                { icon: FaYoutube, link: "#", color: "hover:bg-red-600" },
-                { icon: FaWordpress, link: "#", color: "hover:bg-gray-700" },
-              ].map(({ icon: Icon, link, color }, idx) => (
-                <a
-                  key={idx}
-                  href={link}
-                  className={`w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:text-white transition ${color}`}
-                >
-                  <Icon size={16} />
-                </a>
-              ))}
-            </div>
+          {/* Social Icons */}
+          <div className="flex justify-center md:justify-start gap-3 mt-4">
+            {socialLinks.map(({ icon: Icon, link }, idx) => (
+              <a
+                key={idx}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:bg-[#0089FF] hover:text-white transition duration-300"
+              >
+                <Icon size={16} />
+              </a>
+            ))}
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <hr className="w-full border-gray-300" />
-        <div className="text-center py-5 text-sm text-gray-600">
-          © {new Date().getFullYear()} <span className="text-[#0089FF] font-semibold">deMed</span> | Powered by deMed
+        {/* Quick Links */}
+        <div className="md:text-left">
+          <h3 className="font-semibold text-lg mb-4 text-[#0089FF]">Quick Links</h3>
+          <ul className="space-y-2 text-sm">
+            {[
+              { href: "/", label: "Home" },
+              { href: "/about", label: "About" },
+              { href: "/#surgeries", label: "Our Services" },
+              { href: "/contact", label: "Contact Us" },
+            ].map(({ href, label }) => (
+              <li key={href}>
+                <Link href={href} className="hover:text-[#0089FF] transition duration-200">
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
+
+        {/* Contact Details */}
+        <div className="md:text-left">
+          <h3 className="font-semibold text-lg mb-4 text-[#0089FF]">Contact Details</h3>
+          <div className="space-y-3 text-sm">
+            <p className="flex items-start gap-2 md:justify-start">
+              <FaMapMarkerAlt className="text-[#0089FF] text-xl" />
+              1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
+            </p>
+            <p className="flex items-center gap-2  md:justify-start">
+              <FaPhoneAlt className="text-[#0089FF] text-lg" /> +91 96440 32229
+            </p>
+            <p className="flex items-center gap-2  md:justify-start">
+              <FaEnvelope className="text-[#0089FF] text-lg" /> dramitbenganisocial@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <hr className="w-full border-gray-300" />
+      <div className="text-center py-5 text-sm text-gray-600">
+        Copyright © 2025 Dr Amit Bengani Jain | Design & Developed By{" "}
+        <span className="font-semibold text-[#0089FF]">Yashik Yadav & Co.</span>
       </div>
     </footer>
   );

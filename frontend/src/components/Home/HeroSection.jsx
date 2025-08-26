@@ -5,15 +5,13 @@ export default function Hero() {
         {/* Left Content */}
         <div className="text-center md:text-left">
           <p className="text-[#0089FF] font-semibold uppercase tracking-wide">
-            Health Equity, Always
+            EXPERT SURGERY, ALWAYS
           </p>
           <h1 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Healthy does not mean <br /> to be expensive
+Best General & Laparoscopic Surgeon in Jaipur
           </h1>
           <p className="mt-6 text-gray-700 max-w-lg mx-auto md:mx-0">
-            Phasellus est urna, rutrum nec leo elementum, hendrerit eleifend nunc.
-            Fusce sem odio, auctor at malesuada nec, mattis vulputate magna. Duis
-            ornare orci nec elit venenatis pulvinar.
+            Dr. Amit Bengani provides advanced treatments for hernia, piles, gallbladder stones, and more. Honest guidance, patient comfort, and safe recovery—every step of the way
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

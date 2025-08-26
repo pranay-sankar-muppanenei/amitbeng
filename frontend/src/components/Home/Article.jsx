@@ -13,7 +13,6 @@ const SurgeryActivities = () => {
     "/news4.jpg",
     "/news5.jpg",
     "/news3.jpg",
-    "/news7.jpg",
     "/news6.jpg",
    
      "/news2.jpg",
