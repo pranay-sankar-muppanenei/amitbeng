@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="relative flex justify-center">
           <div className="absolute -z-10 w-80 h-80 bg-[#B3E6FF] rounded-full blur-3xl opacity-40"></div>
           <img
-            src="/hdoc.png"
+            src="/jain2.png"
             alt="Doctor"
             className="w-full max-w-sm object-contain drop-shadow-xl"
           />

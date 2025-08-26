@@ -8,6 +8,9 @@ const SurgeryActivities = () => {
     "/news3.jpg",
     "/new1.jpg",
     "/news2.jpg",
+    "/news6.jpg",
+    "/news7.jpg",
+    "/news8.jpg",
   ];
 
   return (
