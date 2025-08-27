@@ -32,7 +32,7 @@ export default function Home() {
         <FaWhatsapp size={28} />
       </a>
 
-      <Footer/>
+
     </>
   );
 }

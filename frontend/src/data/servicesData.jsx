@@ -39,33 +39,93 @@ export const servicesData = [
     ]
   },
   {
-    id: 2,
-    category: "appendix-surgeries",
-    name: "Appendix Surgeries",
-    description: "Procedures to remove the appendix in emergency or elective cases.",
-    subSurgeries: [
-      {
-        slug: "laparoscopic-appendectomy",
-        name: "Laparoscopic Appendectomy",
-        description: "Keyhole surgery to remove the inflamed appendix.",
-        details: {
-          whenNeeded: "Acute appendicitis or suspected appendix rupture.",
-          preparation: "Ultrasound/CT scan, antibiotics before surgery.",
-          rehabilitation: "1–2 days hospital stay, normal activity in a week."
-        }
-      },
-      {
-        slug: "open-appendectomy",
-        name: "Open Appendectomy",
-        description: "Traditional surgery with a larger incision to remove appendix.",
-        details: {
-          whenNeeded: "When appendix ruptures or laparoscopic not possible.",
-          preparation: "Blood tests, IV fluids, antibiotics.",
-          rehabilitation: "2–3 weeks recovery, longer hospital stay than laparoscopic."
-        }
+  id: 2,
+  category: "other-surgeries",
+  name: "Other Surgeries",
+  description: "Minor but essential surgeries for abscesses and cysts.",
+  subSurgeries: [
+    {
+      slug: "abscess-drainage",
+      name: "Abscess Drainage",
+      description: "Surgical drainage of pus collection.",
+      details: {
+        whenNeeded: "For any localized abscess not resolving with antibiotics.",
+        preparation: "Ultrasound if deep; fasting 4–6 hrs.",
+        rehabilitation: "Day-care procedure, recovery in few days."
       }
-    ]
-  },
+    },
+    {
+      slug: "cyst-excision",
+      name: "Cyst Excision",
+      description: "Removal of sebaceous or dermoid cysts.",
+      details: {
+        whenNeeded: "For painful, infected, or enlarging cysts.",
+        preparation: "Local anesthesia evaluation.",
+        rehabilitation: "Day-care surgery, recovery 1 week."
+      }
+    },
+    {
+      slug: "lipoma-excision",
+      name: "Lipoma Excision",
+      description: "Surgical removal of lipomas (fatty lumps).",
+      details: {
+        whenNeeded: "For painful, enlarging, or cosmetically concerning lipomas.",
+        preparation: "Basic blood tests; local or general anesthesia as advised.",
+        rehabilitation: "Day-care procedure; recovery within a few days."
+      }
+    },
+    {
+      slug: "circumcision",
+      name: "Circumcision",
+      description: "Surgical removal of the foreskin of the penis.",
+      details: {
+        whenNeeded: "For phimosis, recurrent infections, or cultural/religious reasons.",
+        preparation: "Routine evaluation; fasting if under general anesthesia.",
+        rehabilitation: "Day-care surgery; healing in 1–2 weeks."
+      }
+    },
+    {
+      slug: "varicose-vein-surgery",
+      name: "Varicose Vein Surgery",
+      description: "Surgical treatment of enlarged, twisted veins.",
+      details: {
+        whenNeeded: "For painful, swollen, or cosmetically concerning varicose veins.",
+        preparation: "Doppler ultrasound evaluation; pre-op fitness check.",
+        rehabilitation: "Short hospital stay; return to normal activity in 1–2 weeks."
+      }
+    },
+    {
+      slug: "hydrocele-surgery",
+      name: "Hydrocele Surgery",
+      description: "Surgical treatment for fluid-filled scrotal swelling.",
+      details: {
+        whenNeeded: "For persistent or symptomatic hydroceles.",
+        preparation: "Routine pre-op investigations; anesthesia assessment.",
+        rehabilitation: "Day-care or overnight stay; recovery within a week."
+      }
+    },
+    {
+      slug: "frenuloplasty",
+      name: "Frenuloplasty for Short and tight Frenulum",
+      description: "Surgical correction for tight or short frenulum of the penis.",
+      details: {
+        whenNeeded: "When tight frenulum causes pain during intercourse or tears frequently.",
+        preparation: "Routine check-up; local or general anesthesia as required.",
+        rehabilitation: "Day-care surgery; healing in 1–2 weeks."
+      }
+    },
+    {
+      slug: "orchidectomy",
+      name: "Orchidectomy for Testicular diseases",
+      description: "Surgical removal of one or both testicles for medical reasons.",
+      details: {
+        whenNeeded: "For testicular tumors, severe infections, or gender reassignment.",
+        preparation: "Pre-op blood tests, imaging, and anesthesia evaluation.",
+        rehabilitation: "Short hospital stay; recovery in 1–2 weeks with follow-up care."
+      }
+    }
+  ]
+},
   {
     id: 3,
     category: "hernia-surgeries",
@@ -452,34 +512,35 @@ export const servicesData = [
     }
   ]
 },
-{
-  id: 10,
-  category: "other-surgeries",
-  name: "Other Surgeries",
-  description: "Minor but essential surgeries for abscesses and cysts.",
-  subSurgeries: [
-    {
-      slug: "abscess-drainage",
-      name: "Abscess Drainage",
-      description: "Surgical drainage of pus collection.",
-      details: {
-        whenNeeded: "For any localized abscess not resolving with antibiotics.",
-        preparation: "Ultrasound if deep; fasting 4–6 hrs.",
-        rehabilitation: "Day-care procedure, recovery in few days."
+ {
+    id: 10,
+    category: "appendix-surgeries",
+    name: "Appendix Surgeries",
+    description: "Procedures to remove the appendix in emergency or elective cases.",
+    subSurgeries: [
+      {
+        slug: "laparoscopic-appendectomy",
+        name: "Laparoscopic Appendectomy",
+        description: "Keyhole surgery to remove the inflamed appendix.",
+        details: {
+          whenNeeded: "Acute appendicitis or suspected appendix rupture.",
+          preparation: "Ultrasound/CT scan, antibiotics before surgery.",
+          rehabilitation: "1–2 days hospital stay, normal activity in a week."
+        }
+      },
+      {
+        slug: "open-appendectomy",
+        name: "Open Appendectomy",
+        description: "Traditional surgery with a larger incision to remove appendix.",
+        details: {
+          whenNeeded: "When appendix ruptures or laparoscopic not possible.",
+          preparation: "Blood tests, IV fluids, antibiotics.",
+          rehabilitation: "2–3 weeks recovery, longer hospital stay than laparoscopic."
+        }
       }
-    },
-    {
-      slug: "cyst-excision",
-      name: "Cyst Excision",
-      description: "Removal of sebaceous or dermoid cysts.",
-      details: {
-        whenNeeded: "For painful, infected, or enlarging cysts.",
-        preparation: "Local anesthesia evaluation.",
-        rehabilitation: "Day-care surgery, recovery 1 week."
-      }
-    }
-  ]
-}
+    ]
+  },
+
 
   // ⚡ You can continue similarly for Piles, Abdominal, Bariatric, Breast, Thyroid, etc.
 ];

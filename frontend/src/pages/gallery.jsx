@@ -8,9 +8,10 @@ const galleryData = {
     "/about30.jpg",
   ],
   events: [
-    "/gallery/event1.jpg",
-    "/gallery/event2.jpg",
-    "/gallery/event3.jpg",
+    "/cert1.jpeg",
+    "/cert2.jpeg",
+    "/cert3.png",
+    "/cert4.png",
   ],
   stories: [
     "/gallery/story1.jpg",
@@ -36,7 +37,7 @@ export default function GalleryPage() {
       <div className="flex justify-center gap-4 mb-10">
         {[
           { key: "opd", label: "Doctor in OPD / Surgery" },
-          { key: "events", label: "Events / Conferences" },
+          { key: "events", label: "Certifications" },
           { key: "stories", label: "Before-After Stories" },
         ].map((tab) => (
           <button
@@ -63,7 +64,7 @@ export default function GalleryPage() {
             <img
               src={img}
               alt="Gallery"
-              className="w-full h-64 object-cover group-hover:opacity-90 transition"
+              className="w-full h-64 object-contain group-hover:opacity-90 transition"
             />
             <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-20 transition"></div>
           </div>
