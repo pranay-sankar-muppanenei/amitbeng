@@ -54,43 +54,51 @@ export default function Header() {
       }`}
     />
   </span>
-  {openDropdown === "service" && (
-    <div className="absolute left-0 top-4 mt-2 bg-white shadow-lg rounded-xl py-2 z-20 border border-gray-100 animate-fadeIn w-64">
-      {servicesData.map((category, i) => (
-        <div
-          key={i}
-          className="relative"
-          onMouseEnter={() => setOpenSubmenu(category.category)}
-          onMouseLeave={() => setOpenSubmenu(null)}
-        >
-          {/* Main Category */}
-           <Link
-    href={`/surgeries/${category.category}`} // 👈 main category link
-    className="flex justify-between items-center px-4 py-2 hover:bg-[#F0F8FF] cursor-pointer"
-  >
-    {category.name}
-    <FiChevronRight />
-  </Link>
 
-          {/* Sub-surgeries */}
-          {openSubmenu === category.category && (
-            <div className="absolute top-0 left-60 ml-2 bg-white shadow-lg rounded-xl py-2 w-64 border border-gray-100 animate-fadeIn">
-              {category.subSurgeries.map((sub, j) => (
+  {openDropdown === "service" && (
+    <div className="absolute left-0 top-3 mt-2 z-20 flex">
+      {/* Wrap BOTH menus in the same container */}
+      <div className="relative flex" onMouseLeave={() => setOpenSubmenu(null)}>
+        {/* Main Category Dropdown */}
+        <div className="bg-white shadow-lg rounded-xl py-2 border border-gray-100 w-64">
+          {servicesData.map((category, i) => (
+            <div
+              key={i}
+              className="relative"
+              onMouseEnter={() => setOpenSubmenu(category.category)}
+            >
+              <Link
+                href={`/surgeries/${category.category}`}
+                className="flex justify-between items-center px-4 py-2 hover:bg-[#F0F8FF] cursor-pointer"
+              >
+                {category.name}
+                <FiChevronRight />
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        {/* Sub-surgeries Dropdown */}
+        {openSubmenu && (
+          <div className="bg-white shadow-lg rounded-xl py-2 w-64 border border-gray-100 absolute left-full top-0 z-50" style={{ height: "100%" }}>
+            {servicesData
+              .find((cat) => cat.category === openSubmenu)
+              ?.subSurgeries.map((sub, j) => (
                 <Link
                   key={j}
-                  href={`/surgery/${category.category}/${sub.slug}`}
+                  href={`/surgery/${openSubmenu}/${sub.slug}`}
                   className="block px-4 py-2 hover:bg-[#F0F8FF]"
                 >
                   {sub.name}
                 </Link>
               ))}
-            </div>
-          )}
-        </div>
-      ))}
+          </div>
+        )}
+      </div>
     </div>
   )}
 </div>
+
 
 
           {/* Pages Dropdown */}
