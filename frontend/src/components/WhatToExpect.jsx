@@ -90,7 +90,7 @@ export default function WhatToExpect({ serviceId }) {
         <span className="text-3xl text-[#0089FF]">💡</span>
       </div>
       <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
-        Looking for the best {data?.title || "surgery"} surgeon in Jaipur?
+        Looking for the best  surgeon in Jaipur?
       </h3>
       <p className="text-gray-600 mb-6">
         Book your consultation today and take the first step toward a healthier life.
