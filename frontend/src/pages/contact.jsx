@@ -48,34 +48,41 @@ export default function Contact() {
     <div className="bg-gray-50">
       {/* Top Info Section */}
       <section className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6 text-center">
-        {/* Address */}
-        <div className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)]">
-          <FaMapMarkerAlt className="mx-auto text-4xl text-[#0076BC] mb-3" />
-          <h3 className="font-semibold text-lg">Our Address</h3>
-          <p className="text-gray-600 mt-1">
-            1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
-          </p>
-        </div>
+  {/* Address */}
+  <a
+    href="https://share.google/s3mzPiuUDaQfXPXOD"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)] block"
+  >
+    <FaMapMarkerAlt className="mx-auto text-4xl text-[#0076BC] mb-3" />
+    <h3 className="font-semibold text-lg">Our Address</h3>
+    <p className="text-gray-600 mt-1">
+      1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
+    </p>
+  </a>
 
-        {/* Phone */}
-        <div className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)]">
-          <FaPhoneAlt className="mx-auto text-4xl text-[#0076BC] mb-3" />
-          <h3 className="font-semibold text-lg">Phone Number</h3>
-          <p className="text-gray-600 mt-1">96440 32229</p>
-        </div>
+  {/* Phone */}
+  <a
+    href="tel:+919644032229"
+    className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)] block"
+  >
+    <FaPhoneAlt className="mx-auto text-4xl text-[#0076BC] mb-3" />
+    <h3 className="font-semibold text-lg">Phone Number</h3>
+    <p className="text-gray-600 mt-1">96440 32229</p>
+  </a>
 
-        {/* Email */}
-        <div className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)]">
-          <a
-            href="mailto:dramitbenganisocial@gmail.com"
-            className="text-gray-600 mt-1"
-          >
-            <FaEnvelope className="mx-auto text-4xl text-[#0076BC] mb-3" />
-            <h3 className="font-semibold text-lg">Email Address</h3>
-            dramitbenganisocial@gmail.com
-          </a>
-        </div>
-      </section>
+  {/* Email */}
+  <a
+    href="mailto:dramitbenganisocial@gmail.com"
+    className="p-6 bg-white shadow-md rounded-xl border border-transparent transition-all duration-300 transform hover:scale-105 hover:border-[#0076BC] hover:shadow-[0_0_25px_rgba(0,118,188,0.5)] block"
+  >
+    <FaEnvelope className="mx-auto text-4xl text-[#0076BC] mb-3" />
+    <h3 className="font-semibold text-lg">Email Address</h3>
+    <p className="text-gray-600 mt-1">dramitbenganisocial@gmail.com</p>
+  </a>
+</section>
+
 
       {/* Contact Form Section */}
       <section className="max-w-3xl mx-auto px-6 py-16">

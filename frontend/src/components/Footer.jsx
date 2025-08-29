@@ -72,21 +72,39 @@ export default function Footer() {
         </div>
 
         {/* Contact Details */}
-        <div className="md:text-left">
-          <h3 className="font-semibold text-lg mb-4 text-[#0089FF]">Contact Details</h3>
-          <div className="space-y-3 text-sm">
-            <p className="flex items-start gap-2 md:justify-start">
-              <FaMapMarkerAlt className="text-[#0089FF] text-xl" />
-              1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
-            </p>
-            <p className="flex items-center gap-2  md:justify-start">
-              <FaPhoneAlt className="text-[#0089FF] text-lg" /> +91 96440 32229
-            </p>
-            <p className="flex items-center gap-2  md:justify-start">
-              <FaEnvelope className="text-[#0089FF] text-lg" /> dramitbenganisocial@gmail.com
-            </p>
-          </div>
-        </div>
+        {/* Contact Details */}
+<div className="md:text-left">
+  <h3 className="font-semibold text-lg mb-4 text-[#0089FF]">Contact Details</h3>
+  <div className="space-y-3 text-sm">
+    {/* Location */}
+    <a
+      href="https://share.google/s3mzPiuUDaQfXPXOD"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-start gap-2 md:justify-start hover:text-[#0089FF] transition"
+    >
+      <FaMapMarkerAlt className="text-[#0089FF] text-xl" />
+      1st floor, 28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur, Rajasthan 302019
+    </a>
+
+    {/* Phone */}
+    <a
+      href="tel:+919644032229"
+      className="flex items-center gap-2 md:justify-start hover:text-[#0089FF] transition"
+    >
+      <FaPhoneAlt className="text-[#0089FF] text-lg" /> +91 96440 32229
+    </a>
+
+    {/* Email */}
+    <a
+      href="mailto:dramitbenganisocial@gmail.com"
+      className="flex items-center gap-2 md:justify-start hover:text-[#0089FF] transition"
+    >
+      <FaEnvelope className="text-[#0089FF] text-lg" /> dramitbenganisocial@gmail.com
+    </a>
+  </div>
+</div>
+
       </div>
 
       {/* Bottom Bar */}
