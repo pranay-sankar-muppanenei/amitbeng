@@ -86,6 +86,25 @@ export default function SubSurgeryDetail() {
         renderSection("Benefits", subSurgery.benefits, "border-blue-500")}
       {subSurgery.challenges &&
         renderSection("Challenges", subSurgery.challenges, "border-red-500")}
+
+         <div className="mt-16 bg-gray-50 p-6 rounded-xl border border-gray-200 shadow-sm">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          Contact Details
+        </h2>
+        <p className="text-gray-700 mb-2">
+          <span className="font-semibold">Phone:</span> +91 96440 32229
+        </p>
+        <p className="text-gray-700 mb-2">
+          <span className="font-semibold">Address:</span> VS MediHUB, 1st Floor,
+          28 Shiv Shakti Nagar, near Indo Bharat School, Nirman Nagar, Jaipur,
+          Rajasthan 302019
+        </p>
+        <p className="text-gray-600 mt-4">
+          For appointments and inquiries, contact us at the above number or
+          visit our clinic. Our experienced team is committed to providing
+          expert surgical care with personalized attention.
+        </p>
+      </div>
     </section>
   );
 }

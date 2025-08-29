@@ -83,9 +83,10 @@ export default function Contact() {
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Get in touch</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Praesent et eros laoreet metus feugiat vulputate. Duis in risus arcu.
-            Praesent id nibh mauris. Phasellus malesuada dui nunc, vitae blandit
-            nisl placerat id.
+                Have questions about our treatments or need to schedule a consultation? 
+    Our expert medical team is here to assist you. Fill out the form below 
+    and we will get back to you promptly to provide the guidance and care you need.
+
           </p>
         </div>
 

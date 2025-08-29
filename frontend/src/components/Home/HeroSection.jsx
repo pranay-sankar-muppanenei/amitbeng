@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hero() {
   return (
     <section className="relative bg-gradient-to-r from-[#E6F3FF] via-[#CCE9FF] to-[#99D0FF]">
@@ -15,12 +17,16 @@ Best General & Laparoscopic Surgeon in Jaipur
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <Link href='/contact'>
             <button className="bg-gradient-to-r from-[#0089FF] to-[#005FCC] hover:scale-105 transition-transform text-white font-semibold px-7 py-3 rounded-lg shadow-lg">
               Contact Us
             </button>
+            </Link>
+            <Link href='/about'>
             <button className="border-2 border-[#0089FF] text-[#0089FF] hover:bg-[#E6F3FF] transition font-semibold px-7 py-3 rounded-lg">
               Learn More
             </button>
+            </Link>
           </div>
         </div>
 
