@@ -158,8 +158,8 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu */}
-    {mobileMenuOpen && (
-  <div className="md:hidden bg-white shadow-lg border-t border-gray-100 px-6 py-4 space-y-4 animate-slideDown">
+{mobileMenuOpen && (
+  <div className="md:hidden bg-white shadow-lg border-t border-gray-100 px-6 py-4 space-y-4 animate-slideDown h-[70vh] overflow-y-auto">
     <Link
       href="/"
       className="block hover:bg-blue-50 rounded-md px-2 transition"
@@ -172,7 +172,6 @@ export default function Header() {
     >
       About
     </Link>
-   
 
     {/* Services Toggle (Mobile) */}
     <div>
@@ -189,20 +188,19 @@ export default function Header() {
       </button>
 
       {mobileServicesOpen && (
-  <div className="ml-4 mt-2 space-y-2">
-    {servicesData.map((category, i) => (
-      <Link
-        key={i}
-        href={`/surgeries/${category.category}`}
-        className="flex justify-between items-center w-full text-left px-2 py-1 hover:bg-blue-50 rounded-md transition"
-      >
-        {category.name}
-        <FiChevronRight />
-      </Link>
-    ))}
-  </div>
-)}
-
+        <div className="ml-4 mt-2 space-y-2">
+          {servicesData.map((category, i) => (
+            <Link
+              key={i}
+              href={`/surgeries/${category.category}`}
+              className="flex justify-between items-center w-full text-left px-2 py-1 rounded-md transition hover:bg-blue-100"
+            >
+              {category.name}
+              <FiChevronRight />
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
 
     {/* Pages */}
@@ -210,17 +208,14 @@ export default function Header() {
       <p className="font-medium">Pages</p>
       <Link
         href="/blogs"
-        className="block ml-4 hover:bg-blue-50 rounded-md px-2 transition"
+        className="block ml-4 hover:bg-blue-100 rounded-md px-2 transition"
       >
         Blogs
       </Link>
-     
-     
     </div>
 
     {/* Login / Signup Buttons */}
     <div className="pt-2 flex gap-4">
-      
       <Link
         href="/contact"
         className="flex-1 text-center bg-gradient-to-r from-[#0089FF] to-[#005FCC] text-white px-3 py-2 rounded-lg hover:opacity-90 transition"
@@ -230,6 +225,7 @@ export default function Header() {
     </div>
   </div>
 )}
+
 
     </header>
   );
