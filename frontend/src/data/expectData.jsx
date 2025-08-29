@@ -459,7 +459,194 @@ items: [
       "answer": "The cut is small and usually hidden in a neck crease. Minimally invasive surgery leaves very small or no visible scars."
     }
   ]
+},
+{
+  "id": 9,
+  "items": [
+    {
+      "title": "Before Surgery",
+      "description": "You will meet your surgeon and anesthetist. Blood tests, CT scans, or MRI may be done to understand your condition. You may need to stop eating or drinking for several hours before surgery.",
+      "color": "border-blue-500"
+    },
+    {
+      "title": "Anesthesia",
+      "description": "General anesthesia is given so you will be fully asleep and feel no pain during the operation.",
+      "color": "border-green-500"
+    },
+    {
+      "title": "Incision",
+      "description": "The surgeon makes small cuts (for laparoscopic or robotic surgery) or a larger cut (for open surgery) in the abdomen to access the liver, spleen, or pancreas.",
+      "color": "border-yellow-500"
+    },
+    {
+      "title": "Organ-Specific Procedure",
+      "description": "Depending on your condition, part of the liver, spleen, or pancreas may be removed. In some cases, the entire spleen or a section of the pancreas is taken out. Tumors, cysts, or damaged tissue are carefully treated.",
+      "color": "border-red-500"
+    },
+    {
+      "title": "Protecting Nearby Structures",
+      "description": "The surgeon takes care to protect nearby blood vessels, bile ducts, and other vital organs during the procedure.",
+      "color": "border-purple-500"
+    },
+    {
+      "title": "Closing and Dressing",
+      "description": "The incisions are closed with stitches or staples, and a small drain may be placed to prevent fluid build-up. A sterile dressing is applied.",
+      "color": "border-indigo-500"
+    }
+  ],
+  "recovery": {
+    "title": "Recovery & Care After Surgery",
+    "points": [
+      "Hospital stay usually ranges from 3 to 7 days, depending on the type of surgery.",
+      "Mild pain, swelling, or discomfort is normal and managed with medication.",
+      "Special diet and nutrition support may be advised, especially after pancreas surgery.",
+      "You may need vaccines or medicines if the spleen is removed to prevent infections.",
+      "Follow-up visits with scans and blood tests help monitor healing.",
+      "Avoid lifting heavy weights or strenuous activity until cleared by your doctor."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Are liver, spleen, and pancreas surgeries safe?",
+      "answer": "Yes, when performed by experienced surgeons using advanced techniques, these surgeries are safe. Risks depend on your condition and overall health."
+    },
+    {
+      "question": "Will I need lifelong medicines after surgery?",
+      "answer": "It depends on the organ and condition. Some patients may need digestive enzyme supplements, insulin (if part of the pancreas is removed), or vaccines (after spleen removal)."
+    },
+    {
+      "question": "How long does it take to recover?",
+      "answer": "Most patients return to normal activities in 4 to 6 weeks. Minimally invasive surgery usually allows faster recovery compared to open surgery."
+    },
+    {
+      "question": "Will there be visible scars?",
+      "answer": "Minimally invasive procedures leave small scars. Open surgery may leave a larger scar, but it fades with time and proper care."
+    },
+    {
+      "question": "Do I need a special diet after surgery?",
+      "answer": "Yes, especially after pancreatic surgery. Your doctor will provide a personalized diet plan to support digestion and healing."
+    }
+  ]
+},
+{
+  "id": 10,
+  "items": [
+    {
+      "title": "Before Surgery",
+      "description": "Your doctor will explain the procedure and may ask for basic tests. Most minor surgeries are done under local or short general anesthesia.",
+      "color": "border-blue-500"
+    },
+    {
+      "title": "Anesthesia",
+      "description": "Depending on the procedure, local anesthesia (numbing only the area) or general anesthesia is given to ensure you feel no pain.",
+      "color": "border-green-500"
+    },
+    {
+      "title": "Incision",
+      "description": "A small cut is made at the affected site to drain, remove, or repair the problem area such as a cyst, abscess, lipoma, or hydrocele.",
+      "color": "border-yellow-500"
+    },
+    {
+      "title": "Procedure",
+      "description": "The surgeon carefully removes the lump, drains the infection, or repairs the swelling. For varicose veins, damaged veins are tied or sealed.",
+      "color": "border-red-500"
+    },
+    {
+      "title": "Closing and Dressing",
+      "description": "The incision is closed with stitches or adhesive strips, and a small dressing is applied to protect the wound.",
+      "color": "border-purple-500"
+    }
+  ],
+  "recovery": {
+    "title": "Recovery & Post-Operative Care",
+    "points": [
+      "Most patients go home the same day after minor surgery.",
+      "Mild pain or swelling is common and easily managed with medicines.",
+      "Stitches are usually removed in a few days, or they dissolve on their own.",
+      "Normal activities can usually be resumed within 2 to 5 days.",
+      "Follow-up visits ensure proper wound healing and prevent recurrence."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Are these minor surgeries safe?",
+      "answer": "Yes, they are very safe and commonly performed with minimal risks."
+    },
+    {
+      "question": "Do I need to stay in the hospital?",
+      "answer": "Most of these procedures are day-care surgeries, and patients can return home the same day."
+    },
+    {
+      "question": "How long will it take to recover?",
+      "answer": "Most patients recover within a few days, depending on the type of surgery."
+    },
+    {
+      "question": "Will there be a scar?",
+      "answer": "The incision is very small, and scars are usually minimal or fade with time."
+    }
+  ]
 }
+,
+{
+  "id": 11,
+  "items": [
+    {
+      "title": "Emergency Evaluation",
+      "description": "Patients are quickly assessed using scans, blood tests, and physical examinations to identify internal injuries or bleeding.",
+      "color": "border-blue-500"
+    },
+    {
+      "title": "Stabilization",
+      "description": "Doctors first focus on stabilizing the patient with fluids, blood transfusions, and oxygen support before surgery.",
+      "color": "border-green-500"
+    },
+    {
+      "title": "Emergency Surgery",
+      "description": "If internal bleeding, organ damage, or life-threatening injuries are detected, immediate surgery is performed to repair or remove damaged tissues.",
+      "color": "border-red-500"
+    },
+    {
+      "title": "Organ-Specific Care",
+      "description": "Depending on the injury, surgeries may involve repairing the liver, spleen, intestines, or other vital structures.",
+      "color": "border-yellow-500"
+    },
+    {
+      "title": "Post-Surgery Monitoring",
+      "description": "Patients are closely monitored in the ICU for infection, bleeding, or other complications after emergency surgery.",
+      "color": "border-purple-500"
+    }
+  ],
+  "recovery": {
+    "title": "Recovery & Post-Operative Care",
+    "points": [
+      "Hospital stay depends on the severity of the injury, often ranging from several days to weeks.",
+      "Patients may require blood transfusions, antibiotics, or ventilator support in critical cases.",
+      "Gradual diet, physiotherapy, and wound care are part of recovery.",
+      "Regular follow-ups and scans are important to ensure proper healing.",
+      "Emotional and psychological support may be needed after major trauma."
+    ]
+  },
+  "faq": [
+    {
+      "question": "What are trauma and emergency surgeries?",
+      "answer": "They are urgent operations performed to save lives in cases of accidents, internal bleeding, or severe injuries."
+    },
+    {
+      "question": "Are these surgeries risky?",
+      "answer": "Yes, since they are performed in critical situations, risks are higher, but quick intervention greatly improves survival."
+    },
+    {
+      "question": "How long is the recovery period?",
+      "answer": "Recovery depends on the type and severity of injury—some patients recover in weeks, while others may take months."
+    },
+    {
+      "question": "Will there be long-term effects?",
+      "answer": "Some patients recover fully, while others may need long-term rehabilitation or follow-up care depending on the injury."
+    }
+  ]
+}
+
+
 
 
 

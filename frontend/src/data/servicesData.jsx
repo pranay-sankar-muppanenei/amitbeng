@@ -1061,184 +1061,430 @@ export const servicesData = [
   id: 9,
   category: "liver-spleen-pancreas-surgeries",
   name: "Liver, Spleen & Pancreas Surgeries",
-  description: "Surgeries for hepatobiliary, splenic, and pancreatic conditions.",
+  description: "Liver, spleen, and pancreas surgeries are specialized procedures performed to treat a range of conditions affecting these vital organs in the abdomen. These surgeries may involve removing tumors, cysts, or damaged tissue from the liver, treating an enlarged or injured spleen, or addressing problems such as cancer, chronic inflammation, or cysts in the pancreas. At our center, we focus on providing safe, advanced surgical care that helps restore health, reduce pain, and improve recovery. Using modern techniques such as laparoscopic and robotic surgery, our team works to minimize scars, lower risks, and support patients in getting back to normal life as quickly as possible.",
   subSurgeries: [
     {
-      slug: "laparoscopic-splenectomy",
-      name: "Laparoscopic Splenectomy",
-      description: "Minimally invasive spleen removal.",
-      details: {
-        whenNeeded: "For splenic rupture, ITP, or large spleen.",
-        preparation: "CT scan, vaccination before surgery.",
-        rehabilitation: "Hospital stay 4–5 days; recovery 3–4 weeks."
-      }
-    },
+  slug: "laparoscopic-splenectomy",
+  name: "Laparoscopic Splenectomy",
+  description: "Laparoscopic splenectomy is a minimally invasive surgical procedure to remove the spleen using small incisions and a laparoscope (camera). It is often performed to treat conditions such as splenic rupture, certain blood disorders, or enlargement of the spleen (splenomegaly). Compared to open splenectomy, the laparoscopic approach offers reduced postoperative pain, shorter hospital stays, and quicker recovery.",
+  details: {
+    whenNeeded: "Performed when the spleen is damaged, enlarged, ruptured due to trauma, or in cases of blood disorders like idiopathic thrombocytopenic purpura (ITP), hereditary spherocytosis, or certain cancers.",
+    preparation: "Vaccinations against infections (pneumococcal, meningococcal, Haemophilus influenzae type b) are given before surgery. Preoperative blood tests and imaging (CT/ultrasound) are conducted. Fasting for 6-8 hours before surgery is required.",
+    rehabilitation: "Hospital stay usually 1–3 days. Return to normal activities in 2–3 weeks. Long-term, patients may need regular vaccinations and preventive antibiotics due to increased infection risk after spleen removal."
+  },
+  isItCorrectForYou: [
+    "You have a damaged or ruptured spleen due to trauma.",
+    "You suffer from blood disorders like ITP or hereditary spherocytosis.",
+    "Your spleen is enlarged and causing complications.",
+    "Doctors have recommended spleen removal for cancer-related conditions."
+  ],
+  benefits: [
+    "Minimally invasive with smaller incisions and faster recovery.",
+    "Reduced postoperative pain compared to open surgery.",
+    "Shorter hospital stay and quicker return to daily activities.",
+    "Better cosmetic outcome with minimal scarring."
+  ],
+  challenges: [
+    "Risk of bleeding or injury to nearby organs (stomach, pancreas, colon).",
+    "Increased lifelong risk of infections due to absence of spleen.",
+    "Possible complications like pneumonia, abscess, or blood clots.",
+    "Requires general anesthesia."
+  ]
+}
+,
     {
-      slug: "liver-abscess-drainage",
-      name: "Liver Abscess Drainage",
-      description: "Drainage of pus collection in liver.",
-      details: {
-        whenNeeded: "For pyogenic or amoebic liver abscess not responding to medicine.",
-        preparation: "Ultrasound/CT-guided aspiration first.",
-        rehabilitation: "Hospital stay 2–3 days; antibiotics needed."
-      }
-    },
+  slug: "liver-abscess-drainage",
+  name: "Liver Abscess Drainage",
+  description: "Liver abscess drainage is a surgical or minimally invasive procedure performed to remove pus-filled cavities in the liver caused by infection. It helps relieve pain, fever, and prevents life-threatening complications such as rupture or sepsis.",
+  details: {
+    whenNeeded: "Recommended when a liver abscess is large, painful, or not responding to antibiotics.",
+    preparation: "Blood tests, ultrasound or CT scan to locate the abscess, fasting 6-8 hours before procedure.",
+    rehabilitation: "Hospital stay for a few days, with gradual recovery over 1-2 weeks depending on infection control."
+  },
+  isItCorrectForYou: [
+    "You have persistent fever and abdominal pain due to a liver abscess.",
+    "Antibiotics alone are not effective.",
+    "Imaging confirms a drainable collection."
+  ],
+  benefits: [
+    "Relieves symptoms quickly.",
+    "Prevents rupture and spread of infection.",
+    "Minimally invasive options available using guided catheter drainage."
+  ],
+  challenges: [
+    "Risk of bleeding or infection at the drain site.",
+    "Abscess may recur if infection is not fully cleared.",
+    "Requires careful monitoring and antibiotics."
+  ]
+},
     {
-      slug: "liver-resection",
-      name: "Liver Resection",
-      description: "Surgical removal of part of the liver.",
-      details: {
-        whenNeeded: "For liver tumors or metastasis.",
-        preparation: "CT/MRI, liver function tests.",
-        rehabilitation: "Hospital stay 7–10 days; recovery 6–8 weeks."
-      }
-    },
+  slug: "liver-resection",
+  name: "Liver Resection (Hepatectomy)",
+  description: "Liver resection, or hepatectomy, is a surgical procedure to remove a portion of the liver affected by cancer, tumors, or severe damage. Since the liver has the unique ability to regenerate, patients can often recover well after removal of diseased tissue.",
+  details: {
+    whenNeeded: "Indicated for liver cancer, metastases, or benign tumors causing symptoms.",
+    preparation: "CT/MRI scans, blood tests for liver function, fasting before surgery.",
+    rehabilitation: "Hospital stay of 5-7 days, full recovery may take 6-8 weeks."
+  },
+  isItCorrectForYou: [
+    "You have liver cancer or tumors confined to one part of the liver.",
+    "Your liver function is strong enough to handle surgery.",
+    "You are otherwise healthy for major surgery."
+  ],
+  benefits: [
+    "Curative option for liver cancer or tumors.",
+    "Preserves healthy liver tissue that can regenerate.",
+    "Improves long-term survival in selected cases."
+  ],
+  challenges: [
+    "Major surgery with longer recovery.",
+    "Risk of bleeding, bile leakage, or infection.",
+    "Not suitable for patients with poor liver function or cirrhosis."
+  ]
+},
     {
-      slug: "pancreatic-surgery",
-      name: "Pancreatic Surgery",
-      description: "Surgery for cysts, pseudocyst drainage, or tumors.",
-      details: {
-        whenNeeded: "When pancreatic disease causes obstruction or infection.",
-        preparation: "CT/MRI, endoscopic evaluation.",
-        rehabilitation: "Hospital stay 7–10 days, recovery 4–6 weeks."
-      }
-    }
+  slug: "pancreatic-surgery",
+  name: "Pancreatic Surgery",
+  description: "Pancreatic surgery involves procedures to treat pancreatic cancer, cysts, chronic pancreatitis, or trauma. The type of surgery depends on the condition, ranging from removal of part of the pancreas to complex operations like the Whipple procedure.",
+  details: {
+    whenNeeded: "Performed for pancreatic tumors, severe chronic pancreatitis, or cysts causing complications.",
+    preparation: "CT/MRI scans, blood work, nutritional assessment, and fasting before surgery.",
+    rehabilitation: "Hospital stay of 1-2 weeks, with full recovery taking several weeks to months depending on the procedure."
+  },
+  isItCorrectForYou: [
+    "You have a pancreatic tumor or cyst that requires removal.",
+    "You suffer from chronic pancreatitis not controlled with medication.",
+    "Your condition affects digestion or causes severe pain."
+  ],
+  benefits: [
+    "Can remove tumors and improve survival.",
+    "Relieves severe pain from pancreatitis.",
+    "Restores digestive function in some cases."
+  ],
+  challenges: [
+    "Complex surgery with risks of bleeding and infection.",
+    "Potential long-term effects on digestion and blood sugar control.",
+    "Longer hospital stay and recovery period."
+  ]
+}
   ]
 },
   {
   id: 10,
   category: "other-surgeries",
   name: "Other Surgeries",
-  description: "Minor but essential surgeries for abscesses and cysts.",
+  description: "Other Surgeries include small but essential procedures such as abscess drainage, cyst or lipoma removal, circumcision, varicose vein treatment, and hydrocele surgery. These are usually quick, safe, and performed under local or short anesthesia. Patients can expect a small incision, simple treatment of the problem, and quick recovery with minimal scars. Most people go home the same day and return to daily activities within a few days.",
   subSurgeries: [
     {
-      slug: "abscess-drainage",
-      name: "Abscess Drainage",
-      description: "Surgical drainage of pus collection.",
-      details: {
-        whenNeeded: "For any localized abscess not resolving with antibiotics.",
-        preparation: "Ultrasound if deep; fasting 4–6 hrs.",
-        rehabilitation: "Day-care procedure, recovery in few days."
-      }
-    },
+  slug: "abscess-drainage",
+  name: "Abscess Drainage",
+  description: "Abscess drainage is a minor surgical procedure used to remove pus that has built up within a tissue due to infection. Abscesses can form in the skin, soft tissues, or deeper organs, and they often cause redness, swelling, pain, and sometimes fever. The procedure involves making a small incision to release the trapped pus, followed by cleaning and dressing the wound.",
+  details: {
+    whenNeeded: "Performed when an abscess becomes painful, swollen, or infected and does not resolve with antibiotics alone.",
+    preparation: "Basic blood tests may be done; patient is advised to maintain good hygiene and stop blood-thinning medicines if necessary.",
+    rehabilitation: "Healing usually occurs within 1-2 weeks; regular dressing changes and follow-up visits are important to prevent recurrence."
+  },
+  isItCorrectForYou: [
+    "You have a painful, red, and swollen lump that feels warm to touch.",
+    "Antibiotics alone are not resolving the infection.",
+    "The abscess is causing fever or spreading infection."
+  ],
+  benefits: [
+    "Provides immediate pain relief by draining pus.",
+    "Reduces risk of infection spreading to other areas.",
+    "Usually performed under local anesthesia with minimal downtime."
+  ],
+  challenges: [
+    "May require repeat drainage if pus re-accumulates.",
+    "Risk of scarring at the incision site.",
+    "Requires proper wound care to prevent reinfection."
+  ]
+},
     {
-      slug: "cyst-excision",
-      name: "Cyst Excision",
-      description: "Removal of sebaceous or dermoid cysts.",
-      details: {
-        whenNeeded: "For painful, infected, or enlarging cysts.",
-        preparation: "Local anesthesia evaluation.",
-        rehabilitation: "Day-care surgery, recovery 1 week."
-      }
-    },
+  slug: "cyst-excision",
+  name: "Cyst Excision",
+  description: "Cyst excision is a surgical procedure to remove abnormal, fluid-filled sacs (cysts) that can develop in the skin, soft tissues, or internal organs. While many cysts are benign and harmless, they may become bothersome if they grow, get infected, or cause cosmetic concerns. Excision ensures complete removal of the cyst wall to reduce the chance of recurrence.",
+  details: {
+    whenNeeded: "Performed when cysts become large, painful, recurrent, or cosmetically concerning.",
+    preparation: "Physical examination and sometimes ultrasound are done to assess the cyst. Fasting is usually not required unless sedation is used.",
+    rehabilitation: "Healing generally takes 1-2 weeks; stitches (if placed) are removed within 7-10 days."
+  },
+  isItCorrectForYou: [
+    "You have a cyst that keeps growing or returning after drainage.",
+    "The cyst causes pain, infection, or discomfort.",
+    "You want removal for cosmetic reasons."
+  ],
+  benefits: [
+    "Permanent removal of the cyst with a low recurrence rate.",
+    "Quick outpatient procedure with minimal downtime.",
+    "Improves comfort and cosmetic appearance."
+  ],
+  challenges: [
+    "Small scar may remain at the excision site.",
+    "Infected cysts may require initial drainage before excision.",
+    "Rare chance of recurrence if any part of the cyst wall remains."
+  ]
+},
     {
-      slug: "lipoma-excision",
-      name: "Lipoma Excision",
-      description: "Surgical removal of lipomas (fatty lumps).",
-      details: {
-        whenNeeded: "For painful, enlarging, or cosmetically concerning lipomas.",
-        preparation: "Basic blood tests; local or general anesthesia as advised.",
-        rehabilitation: "Day-care procedure; recovery within a few days."
-      }
-    },
+  slug: "lipoma-excision",
+  name: "Lipoma Excision",
+  description: "Lipoma excision is a minor surgical procedure performed to remove lipomas, which are benign fatty lumps that grow slowly under the skin. Lipomas are generally harmless but may be removed if they are painful, growing in size, or cosmetically undesirable. Complete excision ensures the fatty lump does not recur.",
+  details: {
+    whenNeeded: "Performed when lipomas cause discomfort, pain due to pressure on nerves, or cosmetic concerns.",
+    preparation: "Usually no special preparation is needed; in some cases, imaging may be advised to confirm the diagnosis.",
+    rehabilitation: "Recovery is quick, with most patients returning to normal activities within 1-2 days; stitches are removed in about a week."
+  },
+  isItCorrectForYou: [
+    "You have a growing lump under the skin that feels soft and movable.",
+    "The lipoma is causing pain or pressure symptoms.",
+    "You wish to remove it for cosmetic reasons."
+  ],
+  benefits: [
+    "Complete removal prevents recurrence in most cases.",
+    "Quick outpatient procedure with local anesthesia.",
+    "Improves comfort and cosmetic appearance."
+  ],
+  challenges: [
+    "Minor scarring at the excision site.",
+    "Rare chance of infection or bleeding.",
+    "Multiple lipomas may require repeated procedures."
+  ]
+}
+,
     {
-      slug: "circumcision",
-      name: "Circumcision",
-      description: "Surgical removal of the foreskin of the penis.",
-      details: {
-        whenNeeded: "For phimosis, recurrent infections, or cultural/religious reasons.",
-        preparation: "Routine evaluation; fasting if under general anesthesia.",
-        rehabilitation: "Day-care surgery; healing in 1–2 weeks."
-      }
-    },
+  slug: "circumcision",
+  name: "Circumcision",
+  description: "Circumcision is a minor surgical procedure that involves the removal of the foreskin covering the tip of the penis. It is performed for medical, cultural, or hygiene reasons and can help prevent infections, improve hygiene, or treat medical conditions such as phimosis or recurrent balanitis.",
+  details: {
+    whenNeeded: "Recommended for medical conditions like tight foreskin (phimosis), recurrent infections, or as part of cultural or religious practices.",
+    preparation: "Local or general anesthesia is administered. The area is cleaned and prepped before the procedure.",
+    rehabilitation: "Usually performed as an outpatient procedure. Full recovery is typically within 7-10 days, with minor discomfort and swelling that gradually resolves."
+  },
+  isItCorrectForYou: [
+    "You have a tight or non-retractable foreskin causing discomfort.",
+    "You suffer from repeated infections in the foreskin or glans.",
+    "You or your family prefer circumcision for cultural, religious, or personal reasons."
+  ],
+  benefits: [
+    "Prevents recurrent infections and improves hygiene.",
+    "Quick procedure with minimal hospital stay.",
+    "Typically low risk and well-tolerated."
+  ],
+  challenges: [
+    "Mild pain, swelling, or redness during healing.",
+    "Small risk of bleeding or infection at the incision site.",
+    "Requires careful post-operative care to ensure proper healing."
+  ]
+},
     {
-      slug: "varicose-vein-surgery",
-      name: "Varicose Vein Surgery",
-      description: "Surgical treatment of enlarged, twisted veins.",
-      details: {
-        whenNeeded: "For painful, swollen, or cosmetically concerning varicose veins.",
-        preparation: "Doppler ultrasound evaluation; pre-op fitness check.",
-        rehabilitation: "Short hospital stay; return to normal activity in 1–2 weeks."
-      }
-    },
+  slug: "varicose-vein-surgery",
+  name: "Varicose Vein Surgery",
+  description: "Varicose vein surgery treats enlarged, twisted veins in the legs that cause discomfort, swelling, heaviness, or cosmetic concerns. Surgical options include vein ligation, stripping, or minimally invasive techniques such as endovenous laser or radiofrequency ablation.",
+  details: {
+    whenNeeded: "Performed when varicose veins cause pain, swelling, ulcers, bleeding, or for cosmetic improvement.",
+    preparation: "Preoperative evaluation includes ultrasound of the leg veins, routine blood tests, and avoiding certain medications. Patients may be advised to wear compression stockings after surgery.",
+    rehabilitation: "Most patients can walk immediately after surgery. Recovery varies from a few days for minimally invasive procedures to 1-2 weeks for traditional surgery."
+  },
+  isItCorrectForYou: [
+    "You have visible, bulging veins causing discomfort or heaviness in your legs.",
+    "You experience swelling, itching, or skin changes due to varicose veins.",
+    "Non-surgical treatments like compression stockings have not provided sufficient relief."
+  ],
+  benefits: [
+    "Relieves pain, swelling, and leg fatigue.",
+    "Improves cosmetic appearance of the legs.",
+    "Minimally invasive techniques allow faster recovery and minimal scarring."
+  ],
+  challenges: [
+    "Some patients may experience bruising, swelling, or mild discomfort.",
+    "Recurrence of varicose veins is possible in the long term.",
+    "Requires careful post-operative care and compression therapy."
+  ]
+},
     {
-      slug: "hydrocele-surgery",
-      name: "Hydrocele Surgery",
-      description: "Surgical treatment for fluid-filled scrotal swelling.",
-      details: {
-        whenNeeded: "For persistent or symptomatic hydroceles.",
-        preparation: "Routine pre-op investigations; anesthesia assessment.",
-        rehabilitation: "Day-care or overnight stay; recovery within a week."
-      }
-    },
+  slug: "hydrocele-surgery",
+  name: "Hydrocele Surgery",
+  description: "Hydrocele surgery is a minor procedure to remove or repair a fluid-filled sac surrounding the testicle, which causes swelling and discomfort in the scrotum. Hydroceles are usually painless but can become large and bothersome, and surgery helps restore normal scrotal size and function.",
+  details: {
+    whenNeeded: "Recommended when hydroceles are large, symptomatic, or causing discomfort or cosmetic concern.",
+    preparation: "Preoperative evaluation includes physical examination, ultrasound, and routine blood tests. Patients are usually advised to fast before surgery if general anesthesia is used.",
+    rehabilitation: "Most surgeries are outpatient. Recovery is usually within 1-2 weeks, with swelling and mild discomfort gradually subsiding."
+  },
+  isItCorrectForYou: [
+    "You have scrotal swelling due to fluid accumulation around the testicle.",
+    "Hydrocele is causing discomfort, pain, or interference with daily activities.",
+    "You wish to improve the cosmetic appearance of the scrotum."
+  ],
+  benefits: [
+    "Relieves swelling and discomfort effectively.",
+    "Quick outpatient procedure with minimal hospital stay.",
+    "Low risk and long-lasting results."
+  ],
+  challenges: [
+    "Mild swelling, bruising, or discomfort during recovery.",
+    "Small risk of infection or recurrence of hydrocele.",
+    "Careful post-operative care needed to avoid complications."
+  ]
+},
     {
-      slug: "frenuloplasty",
-      name: "Frenuloplasty for Short and tight Frenulum",
-      description: "Surgical correction for tight or short frenulum of the penis.",
-      details: {
-        whenNeeded: "When tight frenulum causes pain during intercourse or tears frequently.",
-        preparation: "Routine check-up; local or general anesthesia as required.",
-        rehabilitation: "Day-care surgery; healing in 1–2 weeks."
-      }
-    },
+  slug: "frenuloplasty",
+  name: "Frenuloplasty for Short or Tight Frenulum",
+  description: "Frenuloplasty is a minor surgical procedure to correct a short or tight frenulum—the band of tissue under the penis that can restrict movement. This condition can cause pain during sexual activity, tearing, or difficulty with hygiene. Frenuloplasty releases or lengthens the frenulum to relieve discomfort and improve function.",
+  details: {
+    whenNeeded: "Recommended when a tight frenulum causes pain, tearing, or difficulty during sexual activity or hygiene.",
+    preparation: "The area is cleaned and local or general anesthesia is administered. No extensive fasting is usually required for minor procedures.",
+    rehabilitation: "Healing is typically fast, with most patients resuming normal activity in 1-2 weeks. Mild discomfort and swelling may occur initially."
+  },
+  isItCorrectForYou: [
+    "You experience pain or tearing due to a short frenulum.",
+    "Sexual activity is uncomfortable or restricted.",
+    "Daily hygiene is difficult because of tight foreskin tissue."
+  ],
+  benefits: [
+    "Relieves pain and prevents tearing during sexual activity.",
+    "Minimally invasive with quick recovery.",
+    "Improves function and comfort for daily activities and intimacy."
+  ],
+  challenges: [
+    "Mild swelling, redness, or discomfort after surgery.",
+    "Small risk of infection or bleeding at the surgical site.",
+    "Requires proper post-operative care to ensure healing."
+  ]
+},
     {
-      slug: "orchidectomy",
-      name: "Orchidectomy for Testicular diseases",
-      description: "Surgical removal of one or both testicles for medical reasons.",
-      details: {
-        whenNeeded: "For testicular tumors, severe infections, or gender reassignment.",
-        preparation: "Pre-op blood tests, imaging, and anesthesia evaluation.",
-        rehabilitation: "Short hospital stay; recovery in 1–2 weeks with follow-up care."
-      }
-    }
+  slug: "orchidectomy",
+  name: "Orchidectomy (Testicular Surgery)",
+  description: "Orchidectomy is a surgical procedure to remove one or both testicles. It is performed for conditions such as testicular cancer, severe trauma, chronic infections, or other testicular diseases. The surgery helps treat disease, prevent complications, and, in the case of cancer, can be life-saving.",
+  details: {
+    whenNeeded: "Performed for testicular cancer, severe trauma, chronic infections, or non-functioning testicles causing pain or hormonal issues.",
+    preparation: "Preoperative evaluation includes blood tests, imaging, and anesthesia assessment. Patients may need to fast prior to surgery.",
+    rehabilitation: "Hospital stay is usually 1-2 days. Recovery takes 2-4 weeks, with gradual resumption of normal activities. Hormonal replacement therapy may be needed if both testicles are removed."
+  },
+  isItCorrectForYou: [
+    "You have testicular cancer or tumors.",
+    "You suffer from chronic infections or non-functional testicles.",
+    "You have severe trauma to the testicle that cannot be repaired."
+  ],
+  benefits: [
+    "Removes diseased or damaged testicles effectively.",
+    "Prevents spread of cancer or infection.",
+    "Relieves pain and resolves testicular dysfunction."
+  ],
+  challenges: [
+    "Surgical risks such as bleeding, infection, or swelling.",
+    "Potential need for hormonal therapy if both testicles are removed.",
+    "Emotional and psychological impact of testicle removal."
+  ]
+}
   ]
 },
   {
   id: 11,
   category: "trauma-emergency-surgeries",
   name: "Trauma & Emergency Surgeries",
-  description: "Critical and life-saving surgical procedures for trauma and emergency conditions.",
+  description: "Trauma & Emergency Surgeries are life-saving procedures done in urgent situations such as accidents, severe injuries, or sudden internal bleeding. The medical team first stabilizes the patient and then performs surgery to stop bleeding, repair damaged organs, or remove life-threatening injuries. These surgeries are often done on the liver, spleen, intestines, or other vital organs. After surgery, patients are carefully monitored in the ICU and given proper care including medicines, nutrition, and physiotherapy. Quick and expert surgical treatment can make the difference between life and death, helping patients recover and return to normal life safely.",
   subSurgeries: [
     {
-      slug: "abdominal-trauma-surgery",
-      name: "Abdominal Trauma Surgery",
-      description: "Surgical intervention for severe abdominal injuries.",
-      details: {
-        whenNeeded: "Severe abdominal injuries due to accidents or trauma.",
-        preparation: "Rapid imaging, stabilization, and emergency assessment.",
-        rehabilitation: "Variable depending on injury severity; ICU stay may be needed."
-      }
-    },
+  slug: "abdominal-trauma-surgery",
+  name: "Abdominal Trauma Surgery",
+  description: "Abdominal trauma surgery is an emergency surgical procedure performed to treat injuries to the abdominal organs caused by blunt or severe trauma. This surgery addresses internal bleeding, organ damage, or perforations, and aims to stabilize the patient and prevent life-threatening complications.",
+  details: {
+    whenNeeded: "Performed immediately in cases of severe abdominal injury from accidents, falls, or blunt force trauma.",
+    preparation: "Emergency evaluation including physical exam, imaging (ultrasound, CT), and blood tests. No fasting required in emergencies.",
+    rehabilitation: "Recovery varies based on injury severity; hospital stay may range from a few days to several weeks. Gradual return to normal activity under medical supervision."
+  },
+  isItCorrectForYou: [
+    "You have sustained significant abdominal trauma causing pain or internal bleeding.",
+    "Imaging shows organ injury or perforation requiring surgery.",
+    "Non-surgical management is insufficient or unsafe."
+  ],
+  benefits: [
+    "Stops internal bleeding and repairs damaged organs.",
+    "Prevents life-threatening complications from trauma.",
+    "Stabilizes overall health and organ function."
+  ],
+  challenges: [
+    "Surgical risks including infection, bleeding, and anesthesia complications.",
+    "Recovery may be prolonged depending on the severity of injuries.",
+    "May require follow-up surgeries or long-term monitoring."
+  ]
+},
     {
-      slug: "penetrating-injury-repair",
-      name: "Penetrating Injury Repair",
-      description: "Surgery to repair injuries caused by penetrating objects.",
-      details: {
-        whenNeeded: "Penetrating wounds causing internal bleeding or organ damage.",
-        preparation: "Emergency stabilization, blood transfusion if required.",
-        rehabilitation: "Hospital stay 5–10 days, rehabilitation based on injury."
-      }
-    },
+  slug: "penetrating-injury-repair",
+  name: "Penetrating Injury Repair",
+  description: "Penetrating injury repair is an emergency procedure to manage wounds caused by sharp objects such as knives, bullets, or glass that penetrate the body. The surgery focuses on repairing damaged tissues, controlling bleeding, and preventing infections.",
+  details: {
+    whenNeeded: "Performed when a penetrating object causes significant injury to internal organs, blood vessels, or tissues.",
+    preparation: "Immediate assessment, imaging if possible, blood tests, and stabilization. No fasting is required for emergencies.",
+    rehabilitation: "Hospital stay depends on injury severity, often several days. Recovery includes wound care, infection prevention, and gradual resumption of daily activities."
+  },
+  isItCorrectForYou: [
+    "You have a deep puncture or cut causing internal bleeding or organ injury.",
+    "There is risk of infection or tissue damage that cannot heal on its own.",
+    "Immediate surgical repair is needed for life-threatening injuries."
+  ],
+  benefits: [
+    "Controls bleeding and repairs damaged organs or tissues.",
+    "Reduces risk of infection and long-term complications.",
+    "Restores function and stabilizes health quickly."
+  ],
+  challenges: [
+    "Emergency procedure carries higher risks of complications.",
+    "May require intensive post-operative care and monitoring.",
+    "Recovery depends on extent and location of the injury."
+  ]
+},
     {
-      slug: "bleeding-ulcer-surgery",
-      name: "Bleeding Ulcer Surgery",
-      description: "Procedure to control bleeding from stomach or intestinal ulcers.",
-      details: {
-        whenNeeded: "Uncontrolled bleeding not responding to medication.",
-        preparation: "Endoscopy evaluation, blood transfusion if needed.",
-        rehabilitation: "Recovery in 1–2 weeks; diet modification required."
-      }
-    },
+  slug: "bleeding-ulcer-surgery",
+  name: "Bleeding Ulcer Surgery",
+  description: "Bleeding ulcer surgery is performed to treat severe peptic ulcers that cause uncontrolled bleeding, perforation, or other life-threatening complications. This surgery helps stop bleeding, repair the stomach or duodenal lining, and prevent recurrence of ulcer-related complications.",
+  details: {
+    whenNeeded: "Indicated when ulcers do not respond to medical treatment or cause severe bleeding, perforation, or obstruction.",
+    preparation: "Preoperative evaluation includes blood tests, endoscopy, imaging, and stabilization. Patients may need fasting and IV fluids before surgery.",
+    rehabilitation: "Hospital stay is typically 5-7 days. Full recovery takes several weeks, including dietary modifications, medications, and follow-up monitoring."
+  },
+  isItCorrectForYou: [
+    "You have a bleeding or perforated ulcer not controlled by medications.",
+    "You experience recurrent ulcer-related complications or severe pain.",
+    "Endoscopic treatment or medications have failed to stop bleeding."
+  ],
+  benefits: [
+    "Stops life-threatening bleeding from ulcers.",
+    "Repairs stomach or duodenal tissue to prevent recurrence.",
+    "Improves long-term gastrointestinal health."
+  ],
+  challenges: [
+    "Risk of surgical complications like infection, bleeding, or anesthesia reactions.",
+    "Requires careful post-operative dietary and lifestyle management.",
+    "Recovery may be prolonged, with follow-up monitoring required."
+  ]
+},
     {
-      slug: "emergency-bowel-obstruction-surgery",
-      name: "Emergency Bowel Obstruction Surgery",
-      description: "Surgery to relieve life-threatening bowel obstruction.",
-      details: {
-        whenNeeded: "Acute bowel obstruction causing severe pain or vomiting.",
-        preparation: "IV fluids, nasogastric tube, imaging before surgery.",
-        rehabilitation: "Recovery in 2–3 weeks depending on obstruction severity."
-      }
-    }
+  slug: "emergency-bowel-obstruction-surgery",
+  name: "Emergency Bowel Obstruction Surgery",
+  description: "Emergency bowel obstruction surgery is performed to relieve a blockage in the intestines that prevents the normal passage of food, fluids, and gas. This condition can be life-threatening if not treated promptly, and surgery aims to remove or bypass the obstruction, restore bowel function, and prevent complications such as perforation, infection, or tissue death.",
+  details: {
+    whenNeeded: "Performed when a bowel obstruction causes severe pain, vomiting, abdominal distension, or when non-surgical management is insufficient or unsafe.",
+    preparation: "Emergency evaluation including physical examination, imaging (X-ray, CT scan), blood tests, and stabilization of fluids and electrolytes. No fasting is required in emergencies.",
+    rehabilitation: "Hospital stay typically ranges from 5-10 days depending on the severity of the obstruction and surgery type. Gradual return to normal diet and activities under medical supervision is recommended."
+  },
+  isItCorrectForYou: [
+    "You have severe abdominal pain, vomiting, and inability to pass stool or gas.",
+    "Imaging shows a bowel obstruction that cannot be managed conservatively.",
+    "There is a risk of bowel perforation or infection if surgery is delayed."
+  ],
+  benefits: [
+    "Relieves intestinal obstruction and restores bowel function.",
+    "Prevents life-threatening complications like perforation and sepsis.",
+    "Rapid intervention improves survival and overall recovery."
+  ],
+  challenges: [
+    "Surgical risks including infection, bleeding, and anesthesia complications.",
+    "Recovery may be prolonged depending on obstruction severity and patient condition.",
+    "May require temporary or permanent changes in diet or bowel habits."
+  ]
+}
+
   ]
 }
 
